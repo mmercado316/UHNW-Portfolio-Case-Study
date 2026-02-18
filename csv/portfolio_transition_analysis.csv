@@ -1,0 +1,18 @@
+Portfolio_Type,Asset_Class,Sub_Category,Allocation_Percent,Market_Value_USD,Expected_Return_Percent,Standard_Deviation_Percent,Sharpe_Ratio,Liquidity_Rating,Tax_Efficiency_Score,Diversification_Score
+Current_Concentrated,Public Equity,US Large Cap Tech,90.0,22500000,12.5,28.0,0.38,High,Low,Poor
+Current_Concentrated,Cash & Equivalents,Money Market,10.0,2500000,4.5,1.0,0.00,Very High,High,Poor
+JPM_Diversified,Public Equity,US Large Cap,25.0,6250000,10.2,16.5,0.52,High,Medium,Excellent
+JPM_Diversified,Public Equity,US Mid Cap,8.0,2000000,11.5,20.0,0.50,High,Medium,Excellent
+JPM_Diversified,Public Equity,US Small Cap,5.0,1250000,12.0,22.0,0.47,Medium,Medium,Excellent
+JPM_Diversified,Public Equity,International Developed,12.0,3000000,9.5,18.0,0.44,High,Medium,Excellent
+JPM_Diversified,Public Equity,Emerging Markets,5.0,1250000,11.0,25.0,0.38,Medium,Medium,Excellent
+JPM_Diversified,Fixed Income,Investment Grade Bonds,15.0,3750000,5.2,6.0,0.45,High,High,Excellent
+JPM_Diversified,Fixed Income,High Yield Bonds,5.0,1250000,7.5,12.0,0.46,Medium,Medium,Excellent
+JPM_Diversified,Fixed Income,Municipal Bonds,3.0,750000,4.0,5.5,0.27,High,Very High,Excellent
+JPM_Diversified,Private Equity,Buyout Funds,8.0,2000000,14.0,20.0,0.58,Very Low,High,Excellent
+JPM_Diversified,Private Equity,Venture Capital,4.0,1000000,16.0,30.0,0.47,Very Low,High,Excellent
+JPM_Diversified,Real Estate,Core Real Estate,5.0,1250000,8.5,12.0,0.54,Low,High,Excellent
+JPM_Diversified,Real Estate,Real Estate Opportunistic,3.0,750000,12.0,18.0,0.56,Very Low,Medium,Excellent
+JPM_Diversified,Cash & Equivalents,Money Market,2.0,500000,4.5,1.0,0.00,Very High,High,Excellent
+Current_Concentrated,Public Equity,Technology Sector,90.0,22500000,12.5,28.0,0.38,High,Low,Poor
+JPM_Diversified,Alternative Investments,Hedge Funds Multi-Strategy,0.0,0,8.0,10.0,0.50,Low,Medium,Excellent

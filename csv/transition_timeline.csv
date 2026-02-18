@@ -1,0 +1,25 @@
+Phase,Month,Action_Item,Responsible_Party,Asset_Value_Affected,Tax_Impact,Status,Priority,Completion_Percent
+Discovery,1,Complete Risk Tolerance Questionnaire,Private Banker,25000000,0,Planned,Critical,0
+Discovery,1,Review Current Holdings and Cost Basis,Investment Analyst,25000000,0,Planned,Critical,0
+Discovery,1,Tax Consultation with CPA,Wealth Planning Specialist,25000000,4625000,Planned,Critical,0
+Planning,2,Develop Customized Investment Policy Statement,Private Banker,25000000,0,Planned,Critical,0
+Planning,2,Model Alternative Transition Scenarios,Investment Analyst,25000000,0,Planned,High,0
+Planning,2,Private Equity Fund Selection,Alternative Investments Specialist,3000000,0,Planned,High,0
+Planning,3,Real Estate Investment Due Diligence,Real Estate Specialist,2000000,0,Planned,Medium,0
+Planning,3,Fixed Income Portfolio Construction,Fixed Income Specialist,8750000,0,Planned,High,0
+Execution,4,Systematic Equity Liquidation - Tranche 1,Trading Desk,5000000,1250000,Planned,Critical,0
+Execution,4,Deploy Cash to Money Market,Cash Management,5000000,0,Planned,Medium,0
+Execution,5,Systematic Equity Liquidation - Tranche 2,Trading Desk,5000000,1250000,Planned,Critical,0
+Execution,5,Execute Fixed Income Purchases,Fixed Income Specialist,4000000,0,Planned,High,0
+Execution,6,Systematic Equity Liquidation - Tranche 3,Trading Desk,5000000,1250000,Planned,Critical,0
+Execution,6,Deploy to Public Equity Diversification,Equity Specialist,9250000,0,Planned,High,0
+Execution,7,Systematic Equity Liquidation - Tranche 4,Trading Desk,5000000,1250000,Planned,Critical,0
+Execution,7,Complete Fixed Income Allocation,Fixed Income Specialist,4750000,0,Planned,High,0
+Execution,8,Final Equity Liquidation - Tranche 5,Trading Desk,2500000,625000,Planned,Critical,0
+Execution,9,Private Equity Capital Calls - Initial,Alternative Investments Specialist,1500000,0,Planned,Medium,0
+Execution,10,Real Estate Investment Deployment,Real Estate Specialist,2000000,0,Planned,Medium,0
+Execution,11,Private Equity Capital Calls - Additional,Alternative Investments Specialist,1500000,0,Planned,Medium,0
+Monitoring,12,Portfolio Rebalancing Review,Private Banker,25000000,0,Planned,Medium,0
+Monitoring,12,Tax Loss Harvesting Opportunities,Wealth Planning Specialist,25000000,-850000,Planned,High,0
+Monitoring,15,Quarterly Performance Review,Private Banker,25000000,0,Planned,Medium,0
+Monitoring,18,Semi-Annual Risk Assessment,Investment Analyst,25000000,0,Planned,Medium,0

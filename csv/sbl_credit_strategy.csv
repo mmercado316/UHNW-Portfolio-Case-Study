@@ -1,0 +1,63 @@
+Strategy_Type,Metric_Category,Metric_Name,Value,Unit,Year,Description
+SBL_Credit,Loan_Structure,Initial_Loan_Amount,5000000,USD,0,Credit line for Private Foundation seed funding
+SBL_Credit,Loan_Structure,Collateral_Portfolio_Value,15000000,USD,0,Diversified portfolio pledged as collateral (60% of total)
+SBL_Credit,Loan_Structure,Loan_to_Value_Ratio,33.3,Percent,0,Conservative LTV to avoid margin call risk
+SBL_Credit,Loan_Structure,Margin_Call_Trigger,40.0,Percent,0,LTV threshold requiring additional collateral
+SBL_Credit,Loan_Structure,Interest_Rate_SOFR_Plus_Spread,6.50,Percent,0,SOFR (4.5%) + 200bps spread for UHNW tier
+SBL_Credit,Loan_Structure,Loan_Term,10,Years,0,Interest-only with annual rate resets
+SBL_Credit,Loan_Structure,Prepayment_Penalty,0,Percent,0,Full flexibility to pay down at any time
+SBL_Credit,Annual_Costs,Year_1_Interest_Expense,325000,USD,1,Tax-deductible if used for investment purposes
+SBL_Credit,Annual_Costs,Year_2_Interest_Expense,325000,USD,2,Assumes stable interest rate environment
+SBL_Credit,Annual_Costs,Year_3_Interest_Expense,325000,USD,3,Fixed spread over SOFR benchmark
+SBL_Credit,Annual_Costs,Year_4_Interest_Expense,325000,USD,4,Annual review for rate adjustment
+SBL_Credit,Annual_Costs,Year_5_Interest_Expense,325000,USD,5,Cumulative interest: $1.625M
+SBL_Credit,Annual_Costs,Cumulative_Interest_10_Years,3250000,USD,10,Total interest cost over full term
+SBL_Credit,Tax_Benefits,Interest_Tax_Deduction_Year_1,325000,USD,1,Deductible against investment income
+SBL_Credit,Tax_Benefits,Tax_Savings_at_37_Percent_Bracket,120250,USD,1,Federal tax benefit (37% top rate)
+SBL_Credit,Tax_Benefits,Net_After_Tax_Interest_Cost,204750,USD,1,Effective annual borrowing cost
+SBL_Credit,Tax_Benefits,Effective_Interest_Rate_After_Tax,4.10,Percent,1,Net cost: 6.5% × (1 - 0.37)
+SBL_Credit,Liquidity,Immediate_Cash_Generated,5000000,USD,0,Foundation funding without asset sales
+SBL_Credit,Liquidity,Remaining_Liquid_Portfolio,20000000,USD,0,Unpledged assets remain accessible
+SBL_Credit,Liquidity,Total_Portfolio_Liquidity,25000000,USD,0,Full balance sheet flexibility preserved
+SBL_Credit,Risk_Management,Collateral_Diversification_Score,85,Index_0_100,0,Multi-asset portfolio reduces volatility risk
+SBL_Credit,Risk_Management,Daily_Portfolio_Monitoring,Yes,Boolean,0,Real-time LTV tracking via JPM platform
+SBL_Credit,Risk_Management,Emergency_Cash_Reserve,2500000,USD,0,10% portfolio buffer for margin calls
+SBL_Credit,Risk_Management,Stress_Test_2008_Scenario_LTV,28.5,Percent,0,LTV if collateral drops 35% (still safe)
+SBL_Credit,Risk_Management,Stress_Test_2020_Scenario_LTV,31.2,Percent,0,LTV if collateral drops 25% (within limits)
+Outright_Sale,Tax_Impact,Capital_Gains_on_5M_Sale,5000000,USD,0,Selling $5M of concentrated tech stock
+Outright_Sale,Tax_Impact,Cost_Basis_Assumption,500000,USD,0,Original investment (90% unrealized gain)
+Outright_Sale,Tax_Impact,Taxable_Gain,4500000,USD,0,Sale proceeds minus cost basis
+Outright_Sale,Tax_Impact,Federal_Capital_Gains_Tax_20_Percent,900000,USD,0,Long-term capital gains at top rate
+Outright_Sale,Tax_Impact,Net_Investment_Income_Tax_3_8_Percent,171000,USD,0,Medicare surtax on investment income
+Outright_Sale,Tax_Impact,State_Tax_California_13_3_Percent,598500,USD,0,Highest state tax jurisdiction example
+Outright_Sale,Tax_Impact,Total_Tax_Liability,1669500,USD,0,Combined federal and state tax burden
+Outright_Sale,Tax_Impact,Net_Cash_After_Tax,3330500,USD,0,Only $3.3M available for foundation
+Outright_Sale,Opportunity_Cost,Foregone_Portfolio_Growth_Year_1,490000,USD,1,9.8% return on $5M not invested
+Outright_Sale,Opportunity_Cost,Foregone_Portfolio_Growth_Year_5,2800000,USD,5,Cumulative lost compounding over 5 years
+Outright_Sale,Opportunity_Cost,Foregone_Portfolio_Growth_Year_10,7500000,USD,10,10-year opportunity cost of selling
+Comparison,Value_Creation,SBL_Strategy_Cash_Deployed,5000000,USD,0,Full $5M available for foundation
+Comparison,Value_Creation,Sale_Strategy_Cash_After_Tax,3330500,USD,0,Only $3.3M net after taxes
+Comparison,Value_Creation,Additional_Capital_Preserved,1669500,USD,0,Value advantage of SBL over sale
+Comparison,Value_Creation,Portfolio_Assets_Still_Growing,5000000,USD,0,Collateral continues earning 9.8% annually
+Comparison,Efficiency,SBL_Net_Cost_10_Years,2045000,USD,10,After-tax interest: $204.75K × 10 years
+Comparison,Efficiency,Sale_Tax_Plus_Opportunity_Cost,9169500,USD,10,Tax ($1.67M) + Foregone growth ($7.5M)
+Comparison,Efficiency,SBL_Advantage_10_Year,7124500,USD,10,Net benefit of credit strategy vs. sale
+Comparison,Efficiency,Breakeven_Analysis,3.1,Years,3,Years until SBL outperforms outright sale
+SBL_Credit,Foundation_Funding,Initial_Foundation_Endowment,5000000,USD,0,Seed capital via SBL proceeds
+SBL_Credit,Foundation_Funding,Foundation_Annual_Return_Assumption,7.5,Percent,0,Conservative endowment return target
+SBL_Credit,Foundation_Funding,Foundation_Year_5_Value,7200000,USD,5,Growth net of 5% annual grantmaking
+SBL_Credit,Foundation_Funding,Foundation_Year_10_Value,10300000,USD,10,Target endowment value achieved
+SBL_Credit,Foundation_Funding,Cumulative_Grants_Disbursed,3500000,USD,10,Philanthropic impact over decade
+SBL_Credit,Loan_Paydown,Year_6_Partial_Paydown,1000000,USD,6,Reduce principal from portfolio income
+SBL_Credit,Loan_Paydown,Year_8_Partial_Paydown,1500000,USD,8,Further deleveraging as foundation matures
+SBL_Credit,Loan_Paydown,Year_10_Final_Payoff,2500000,USD,10,Full loan satisfaction from portfolio gains
+SBL_Credit,Loan_Paydown,Total_Loan_Repayment_Source,Portfolio_Income,Qualitative,0,No asset sales required for payback
+SBL_Credit,Banking_Relationship,JPM_Household_Credit_Limit,15000000,USD,0,Total available credit across all products
+SBL_Credit,Banking_Relationship,SBL_Utilization_Rate,33.3,Percent,0,Conservative usage of total credit capacity
+SBL_Credit,Banking_Relationship,Mortgage_Credit_Available,5000000,USD,0,Additional residential lending capacity
+SBL_Credit,Banking_Relationship,Unsecured_LOC_Available,2000000,USD,0,Liquidity backstop for emergencies
+SBL_Credit,Banking_Relationship,Total_Banking_Revenue_to_JPM,425000,USD,1,Interest income + wealth management fees
+Alternative_Strategy,1031_Exchange_RE,Defer_Capital_Gains_Tax,Yes,Boolean,0,Alternative tax strategy for real estate
+Alternative_Strategy,Donor_Advised_Fund,Charitable_Deduction_Upfront,5000000,USD,0,DAF allows immediate tax benefit
+Alternative_Strategy,Charitable_Remainder_Trust,Income_Stream_to_Client,Yes,Boolean,0,CRT provides income + estate benefits
+Alternative_Strategy,Qualified_Small_Business_Stock,Section_1202_Exclusion,10000000,USD,0,Potential QSBS gain exclusion if applicable

@@ -1,0 +1,22 @@
+Metric_Category,Metric_Name,Current_Concentrated,JPM_Diversified,Unit,Change_Direction,Improvement_Percent
+Portfolio Risk,Portfolio Beta,1.35,0.88,Ratio,Decrease,34.8
+Portfolio Risk,Value at Risk 95%,4250000,1875000,USD,Decrease,55.9
+Portfolio Risk,Maximum Drawdown Estimate,45.0,22.0,Percent,Decrease,51.1
+Portfolio Risk,Concentration Risk Score,95,15,Index_0_100,Decrease,84.2
+Return Metrics,Expected Annual Return,11.7,9.8,Percent,Decrease,16.2
+Return Metrics,Risk-Adjusted Return,0.38,0.68,Sharpe_Ratio,Increase,78.9
+Return Metrics,Downside Deviation,22.5,11.2,Percent,Decrease,50.2
+Diversification,Number of Holdings,8,145,Count,Increase,1712.5
+Diversification,Asset Class Count,2,7,Count,Increase,250.0
+Diversification,Geographic Exposure,1,4,Regions,Increase,300.0
+Diversification,Correlation to S&P 500,0.94,0.68,Coefficient,Decrease,27.7
+Tax Considerations,Unrealized Capital Gains,18500000,0,USD,N/A,N/A
+Tax Considerations,Estimated Tax on Transition,4625000,0,USD,N/A,N/A
+Tax Considerations,Tax Loss Harvesting Potential,0,850000,USD,Increase,N/A
+Liquidity,Days to Full Liquidation,5,90,Days,Increase,1700.0
+Liquidity,Liquid Assets Percentage,100,70,Percent,Decrease,30.0
+Liquidity,Illiquid Lock-up Capital,0,5000000,USD,Increase,N/A
+Income Generation,Annual Income Projection,112500,625000,USD,Increase,455.6
+Income Generation,Dividend Yield,0.5,2.5,Percent,Increase,400.0
+Estate Planning,Estate Tax Efficiency,Low,High,Qualitative,Increase,N/A
+Estate Planning,Valuation Discount Potential,0,15,Percent,Increase,N/A
