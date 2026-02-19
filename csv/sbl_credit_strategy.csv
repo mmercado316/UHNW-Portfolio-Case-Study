@@ -45,9 +45,9 @@ Comparison,Efficiency,SBL_Advantage_10_Year,7124500,USD,10,Net benefit of credit
 Comparison,Efficiency,Breakeven_Analysis,3.1,Years,3,Years until SBL outperforms outright sale
 SBL_Credit,Foundation_Funding,Initial_Foundation_Endowment,5000000,USD,0,Seed capital via SBL proceeds
 SBL_Credit,Foundation_Funding,Foundation_Annual_Return_Assumption,7.5,Percent,0,Conservative endowment return target
-SBL_Credit,Foundation_Funding,Foundation_Year_5_Value,7200000,USD,5,Growth net of 5% annual grantmaking
-SBL_Credit,Foundation_Funding,Foundation_Year_10_Value,10300000,USD,10,Target endowment value achieved
-SBL_Credit,Foundation_Funding,Cumulative_Grants_Disbursed,3500000,USD,10,Philanthropic impact over decade
+SBL_Credit,Foundation_Funding,Foundation_Year_5_Value,6029000,USD,5,Seed + $70760/yr contribution at 2.5% net (7.5% return minus 5% payout)
+SBL_Credit,Foundation_Funding,Foundation_Year_10_Value,7193000,USD,10,Seed + $70760/yr contribution at 2.5% net (7.5% return minus 5% payout)
+SBL_Credit,Foundation_Funding,Cumulative_Grants_Disbursed,2500000,USD,10,Conservative lower bound: seed x 5% payout x 10 years
 SBL_Credit,Loan_Paydown,Year_6_Partial_Paydown,1000000,USD,6,Reduce principal from portfolio income
 SBL_Credit,Loan_Paydown,Year_8_Partial_Paydown,1500000,USD,8,Further deleveraging as foundation matures
 SBL_Credit,Loan_Paydown,Year_10_Final_Payoff,2500000,USD,10,Full loan satisfaction from portfolio gains
