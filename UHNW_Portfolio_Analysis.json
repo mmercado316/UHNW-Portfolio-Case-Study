@@ -1,0 +1,2591 @@
+{
+  "metadata": {
+    "title": "UHNW Portfolio Analysis Workbook",
+    "subtitle": "$25M Tech Founder Case Study",
+    "prepared_by": "Mario Enrique Mercado",
+    "prepared_date": "February 2026",
+    "sheets": [
+      "Inputs",
+      "Overview",
+      "Portfolio Transition",
+      "Tax Analysis",
+      "SBL Credit",
+      "Goals Planning"
+    ]
+  },
+  "inputs": {
+    "title": "INPUTS & ASSUMPTIONS",
+    "description": "Model assumptions drive every output. Any adjustment to inputs will update the analysis dynamically.",
+    "sections": {
+      "A_portfolio_assumptions": {
+        "label": "Portfolio Assumptions",
+        "items": [
+          {
+            "assumption": "Portfolio Value",
+            "value": 25000000,
+            "unit": "USD",
+            "description": "Total market value of the concentrated tech portfolio"
+          },
+          {
+            "assumption": "Estimated Cost Basis",
+            "value": 6500000,
+            "unit": "USD",
+            "description": "Original acquisition cost of tech holdings"
+          },
+          {
+            "assumption": "Tech Equity Concentration",
+            "value": 0.9,
+            "unit": "%",
+            "description": "Percentage of portfolio in single tech sector"
+          },
+          {
+            "assumption": "Cash & Equivalents Allocation",
+            "value": 0.1,
+            "unit": "%",
+            "description": "Remaining portfolio in money market / cash"
+          }
+        ]
+      },
+      "B_tax_rate_assumptions": {
+        "label": "Tax Rate Assumptions",
+        "items": [
+          {
+            "assumption": "Fed Long-Term Capital Gains Rate",
+            "value": 0.2,
+            "unit": "%",
+            "description": "Top federal rate on long-term capital gains"
+          },
+          {
+            "assumption": "Net Investment Income Tax (NIIT)",
+            "value": 0.038,
+            "unit": "%",
+            "description": "Medicare surtax on investment income (IRC §1411)"
+          },
+          {
+            "assumption": "State Income Tax Rate (CA)",
+            "value": 0.133,
+            "unit": "%",
+            "description": "Highest marginal California income tax rate"
+          },
+          {
+            "assumption": "Marginal Income Tax Bracket",
+            "value": 0.37,
+            "unit": "%",
+            "description": "Used for after-tax interest and deduction calculations"
+          },
+          {
+            "assumption": "Tax-Loss Harvesting Offset",
+            "value": 850000,
+            "unit": "USD",
+            "description": "Identified losses available to offset realized gains"
+          }
+        ]
+      },
+      "C_liquidation_parameters": {
+        "label": "Liquidation Parameters",
+        "items": [
+          {
+            "assumption": "Number of Tranches",
+            "value": 5,
+            "unit": "#",
+            "description": "Total liquidation tranches spread over Months 4-8"
+          },
+          {
+            "assumption": "Tranche Amount (each)",
+            "value": 4500000,
+            "unit": "USD",
+            "description": "Amount of tech equity liquidated per tranche"
+          }
+        ]
+      },
+      "D_sbl_parameters": {
+        "label": "Securities-Based Lending Parameters",
+        "items": [
+          {
+            "assumption": "SBL Loan Amount",
+            "value": 5000000,
+            "unit": "USD",
+            "description": "Non-purpose credit line drawn to seed Private Foundation with $5M initial capital"
+          },
+          {
+            "assumption": "Collateral Pledged",
+            "value": 15000000,
+            "unit": "USD",
+            "description": "Portfolio value pledged; 40% ($10M) remains unencumbered"
+          },
+          {
+            "assumption": "SOFR Benchmark Rate",
+            "value": 0.045,
+            "unit": "%",
+            "description": "Secured Overnight Financing Rate"
+          },
+          {
+            "assumption": "Credit Spread",
+            "value": 0.02,
+            "unit": "%",
+            "description": "Institutional pricing spread above SOFR"
+          },
+          {
+            "assumption": "Margin Call LTV Trigger",
+            "value": 0.4,
+            "unit": "%",
+            "description": "LTV level at which additional collateral is required"
+          }
+        ]
+      },
+      "E_goals_planning_assumptions": {
+        "label": "Goals-Based Planning Assumptions",
+        "items": [
+          {
+            "assumption": "Bear Case Gross Return",
+            "value": 0.05,
+            "unit": "%",
+            "description": "Conservative scenario — stressed market environment"
+          },
+          {
+            "assumption": "Base Case Gross Return",
+            "value": 0.098,
+            "unit": "%",
+            "description": "Institutional long-term capital market assumption"
+          },
+          {
+            "assumption": "Bull Case Gross Return",
+            "value": 0.135,
+            "unit": "%",
+            "description": "Optimistic scenario — alternatives outperform"
+          },
+          {
+            "assumption": "Annual Withdrawal Rate",
+            "value": 0.02,
+            "unit": "%",
+            "description": "Sustainable annual distribution for lifestyle & philanthropy"
+          },
+          {
+            "assumption": "Planning Horizon (Years)",
+            "value": 20,
+            "unit": "Yrs",
+            "description": "Long-term compounding window"
+          },
+          {
+            "assumption": "Private Foundation Target",
+            "value": 10000000,
+            "unit": "USD",
+            "description": "Target philanthropic endowment value"
+          },
+          {
+            "assumption": "Foundation Annual Return",
+            "value": 0.075,
+            "unit": "%",
+            "description": "Expected endowment investment return"
+          },
+          {
+            "assumption": "Foundation Annual Payout",
+            "value": 0.05,
+            "unit": "%",
+            "description": "Annual grantmaking as % of foundation assets"
+          },
+          {
+            "assumption": "Foundation Annual Contribution",
+            "value": 70760,
+            "unit": "USD",
+            "description": "Annual client contribution from portfolio income; bridges $5M seed to $10M target at Year 20"
+          }
+        ]
+      },
+      "F_computed_values": {
+        "label": "Computed Values (auto-calculated)",
+        "items": [
+          {
+            "assumption": "Unrealized Capital Gains",
+            "value": 18500000,
+            "formula": "Portfolio Value − Cost Basis"
+          },
+          {
+            "assumption": "Gross Effective Tax Rate",
+            "value": 0.371,
+            "formula": "Fed + NIIT + State"
+          },
+          {
+            "assumption": "Estimated Gross Tax Liability",
+            "value": 6863500,
+            "formula": "Unrealized Gains × Effective Rate"
+          },
+          {
+            "assumption": "Net Tax Liability (After Offset)",
+            "value": 6013500,
+            "formula": "Gross Tax − Harvesting Offset"
+          },
+          {
+            "assumption": "All-In SBL Interest Rate",
+            "value": 0.065,
+            "formula": "SOFR + Credit Spread"
+          },
+          {
+            "assumption": "After-Tax SBL Rate",
+            "value": 0.04095,
+            "formula": "All-In Rate × (1 − Tax Bracket)"
+          },
+          {
+            "assumption": "Annual Gross Interest (SBL)",
+            "value": 325000,
+            "formula": "Loan Amount × All-In Rate"
+          },
+          {
+            "assumption": "Annual After-Tax Interest (SBL)",
+            "value": 204750,
+            "formula": "Annual Gross × (1 − Tax Bracket)"
+          },
+          {
+            "assumption": "Post-Tax Starting Portfolio",
+            "value": 18986500,
+            "formula": "Portfolio Value − Net Tax Liability"
+          },
+          {
+            "assumption": "Bear Net Return (after withdrawal)",
+            "value": 0.03,
+            "formula": "Bear Return − Withdrawal Rate"
+          },
+          {
+            "assumption": "Base Net Return (after withdrawal)",
+            "value": 0.078,
+            "formula": "Base Return − Withdrawal Rate"
+          },
+          {
+            "assumption": "Bull Net Return (after withdrawal)",
+            "value": 0.115,
+            "formula": "Bull Return − Withdrawal Rate"
+          }
+        ]
+      }
+    }
+  },
+  "overview": {
+    "title": "UHNW PORTFOLIO TRANSITION ANALYSIS",
+    "subtitle": "$25M Tech Founder Case Study | Concentrated Equity to Institutional Diversification | February 2026",
+    "client_profile": {
+      "segment": "Ultra High Net Worth (UHNW) | $10M+ Investable Assets",
+      "portfolio_value": 25000000,
+      "client_type": "Technology Founder / Entrepreneur",
+      "primary_challenge": "90% portfolio concentration in single tech sector; $18.5M unrealized gains",
+      "primary_objective": "De-risk position, generate income, fund $10M Private Foundation"
+    },
+    "key_outcomes": {
+      "columns": [
+        "Metric",
+        "Current Portfolio",
+        "Optimized Model",
+        "Improvement"
+      ],
+      "rows": [
+        {
+          "metric": "Asset Classes",
+          "current": "2",
+          "optimized": "7",
+          "improvement": "+5 Classes"
+        },
+        {
+          "metric": "Portfolio Beta",
+          "current": "1.35",
+          "optimized": "0.88",
+          "improvement": "↓ 34.8%"
+        },
+        {
+          "metric": "Value at Risk (95%)",
+          "current": "$4,250,000",
+          "optimized": "$1,875,000",
+          "improvement": "↓ 55.9%"
+        },
+        {
+          "metric": "Maximum Drawdown (Est.)",
+          "current": "45.0%",
+          "optimized": "22.0%",
+          "improvement": "↓ 51.1%"
+        },
+        {
+          "metric": "Concentration Risk Score",
+          "current": "95 / 100",
+          "optimized": "15 / 100",
+          "improvement": "↓ 84.2%"
+        },
+        {
+          "metric": "Sharpe Ratio",
+          "current": "0.38",
+          "optimized": "0.68",
+          "improvement": "↑ 78.9%"
+        },
+        {
+          "metric": "Annual Portfolio Income",
+          "current": "$112,500",
+          "optimized": "$625,000",
+          "improvement": "↑ 455%"
+        },
+        {
+          "metric": "Correlation to S&P 500",
+          "current": "0.94",
+          "optimized": "0.68",
+          "improvement": "↓ 27.7%"
+        },
+        {
+          "metric": "Number of Holdings",
+          "current": "8",
+          "optimized": "145",
+          "improvement": "+1,713%"
+        }
+      ]
+    },
+    "recommendation_summary": [
+      {
+        "phase": "Phase 1 (Months 1-3)",
+        "action": "Discovery and planning: risk tolerance assessment, cost basis review, CPA consultation, investment policy statement, and transition scenario modeling."
+      },
+      {
+        "phase": "Phase 2 (Months 4-11)",
+        "action": "Systematic liquidation across 5 tranches (Months 4-8, $4.5M each; total $22.5M). Concurrent redeployment into optimized model: 55% public equity, 23% fixed income, 20% alternatives (PE + Real Estate), 2% cash. Tax liability: est. $6.86M gross / $6.01M net."
+      },
+      {
+        "phase": "Phase 3 (Months 12-18)",
+        "action": "Establish $5M SBL credit facility against diversified portfolio. Seed Private Foundation without triggering additional capital gains. Ongoing rebalancing, tax-loss harvesting ($850K target), and quarterly performance reviews."
+      },
+      {
+        "phase": "Tax Strategy",
+        "action": "$850K tax-loss harvesting offset identified. DAF and Opportunity Zone structures available to further reduce net liability."
+      },
+      {
+        "phase": "Goals-Based Planning",
+        "action": "9.8% base-case expected return projects portfolio to approximately $85M at Year 20. Foundation reaches $10.0M target at Year 20: $5M SBL seed compounding at 2.5% net plus $70,760 annual contribution from diversified portfolio income."
+      }
+    ]
+  },
+  "portfolio_transition": {
+    "title": "PORTFOLIO TRANSITION ANALYSIS",
+    "subtitle": "From Concentrated Risk to Institutional Diversification | $25M Portfolio | February 2026",
+    "asset_allocation": {
+      "label": "Asset Allocation Comparison",
+      "columns": [
+        "Asset Class",
+        "Current Alloc %",
+        "Current Value ($)",
+        "Optimized Alloc %",
+        "Optimized Value ($)"
+      ],
+      "rows": [
+        {
+          "asset_class": "Cash & Equivalents",
+          "current_alloc": 0.1,
+          "current_value": 2500000,
+          "optimized_alloc": 0.02,
+          "optimized_value": 500000
+        },
+        {
+          "asset_class": "  Money Market",
+          "current_alloc": 0.1,
+          "current_value": 2500000,
+          "optimized_alloc": 0.02,
+          "optimized_value": 500000
+        },
+        {
+          "asset_class": "Fixed Income",
+          "current_alloc": null,
+          "current_value": null,
+          "optimized_alloc": 0.23,
+          "optimized_value": 5750000
+        },
+        {
+          "asset_class": "  High Yield Bonds",
+          "current_alloc": null,
+          "current_value": null,
+          "optimized_alloc": 0.05,
+          "optimized_value": 1250000
+        },
+        {
+          "asset_class": "  Investment Grade Bonds",
+          "current_alloc": null,
+          "current_value": null,
+          "optimized_alloc": 0.15,
+          "optimized_value": 3750000
+        },
+        {
+          "asset_class": "  Municipal Bonds",
+          "current_alloc": null,
+          "current_value": null,
+          "optimized_alloc": 0.03,
+          "optimized_value": 750000
+        },
+        {
+          "asset_class": "Private Equity",
+          "current_alloc": null,
+          "current_value": null,
+          "optimized_alloc": 0.12,
+          "optimized_value": 3000000
+        },
+        {
+          "asset_class": "  Buyout Funds",
+          "current_alloc": null,
+          "current_value": null,
+          "optimized_alloc": 0.08,
+          "optimized_value": 2000000
+        },
+        {
+          "asset_class": "  Venture Capital",
+          "current_alloc": null,
+          "current_value": null,
+          "optimized_alloc": 0.04,
+          "optimized_value": 1000000
+        },
+        {
+          "asset_class": "Public Equity",
+          "current_alloc": 0.9,
+          "current_value": 22500000,
+          "optimized_alloc": 0.55,
+          "optimized_value": 13750000
+        },
+        {
+          "asset_class": "  Emerging Markets",
+          "current_alloc": null,
+          "current_value": null,
+          "optimized_alloc": 0.05,
+          "optimized_value": 1250000
+        },
+        {
+          "asset_class": "  International Developed",
+          "current_alloc": null,
+          "current_value": null,
+          "optimized_alloc": 0.12,
+          "optimized_value": 3000000
+        },
+        {
+          "asset_class": "  US Large Cap",
+          "current_alloc": null,
+          "current_value": null,
+          "optimized_alloc": 0.25,
+          "optimized_value": 6250000
+        },
+        {
+          "asset_class": "  US Large Cap Tech (90% Concentration)",
+          "current_alloc": 0.9,
+          "current_value": 22500000,
+          "optimized_alloc": null,
+          "optimized_value": null
+        },
+        {
+          "asset_class": "  US Mid Cap",
+          "current_alloc": null,
+          "current_value": null,
+          "optimized_alloc": 0.08,
+          "optimized_value": 2000000
+        },
+        {
+          "asset_class": "  US Small Cap",
+          "current_alloc": null,
+          "current_value": null,
+          "optimized_alloc": 0.05,
+          "optimized_value": 1250000
+        },
+        {
+          "asset_class": "Real Estate",
+          "current_alloc": null,
+          "current_value": null,
+          "optimized_alloc": 0.08,
+          "optimized_value": 2000000
+        },
+        {
+          "asset_class": "  Core Real Estate",
+          "current_alloc": null,
+          "current_value": null,
+          "optimized_alloc": 0.05,
+          "optimized_value": 1250000
+        },
+        {
+          "asset_class": "  Real Estate Opportunistic",
+          "current_alloc": null,
+          "current_value": null,
+          "optimized_alloc": 0.03,
+          "optimized_value": 750000
+        },
+        {
+          "asset_class": "TOTAL PORTFOLIO VALUE",
+          "current_alloc": 1.0,
+          "current_value": 25000000,
+          "optimized_alloc": 1.0,
+          "optimized_value": 25000000
+        }
+      ]
+    },
+    "risk_return_metrics": {
+      "label": "Risk & Return Metrics Comparison",
+      "columns": [
+        "Metric",
+        "Category",
+        "Current Portfolio",
+        "Optimized Model",
+        "Change / Improvement"
+      ],
+      "rows": [
+        {
+          "metric": "Portfolio Beta",
+          "category": "Portfolio Risk",
+          "current": "1.35",
+          "optimized": "0.88",
+          "change": "↓ 34.8%"
+        },
+        {
+          "metric": "Value at Risk 95%",
+          "category": "Portfolio Risk",
+          "current": "$4,250,000",
+          "optimized": "$1,875,000",
+          "change": "↓ 55.9%"
+        },
+        {
+          "metric": "Maximum Drawdown Estimate",
+          "category": "Portfolio Risk",
+          "current": "45.0%",
+          "optimized": "22.0%",
+          "change": "↓ 51.1%"
+        },
+        {
+          "metric": "Concentration Risk Score",
+          "category": "Portfolio Risk",
+          "current": "95",
+          "optimized": "15",
+          "change": "↓ 84.2%"
+        },
+        {
+          "metric": "Expected Annual Return",
+          "category": "Return Metrics",
+          "current": "11.7%",
+          "optimized": "9.8%",
+          "change": "↓ 16.2%"
+        },
+        {
+          "metric": "Risk-Adjusted Return (Sharpe)",
+          "category": "Return Metrics",
+          "current": "0.38",
+          "optimized": "0.68",
+          "change": "↑ 78.9%"
+        },
+        {
+          "metric": "Downside Deviation",
+          "category": "Return Metrics",
+          "current": "22.5%",
+          "optimized": "11.2%",
+          "change": "↓ 50.2%"
+        },
+        {
+          "metric": "Number of Holdings",
+          "category": "Diversification",
+          "current": "8",
+          "optimized": "145",
+          "change": "↑ 1712.5%"
+        },
+        {
+          "metric": "Asset Class Count",
+          "category": "Diversification",
+          "current": "2",
+          "optimized": "7",
+          "change": "↑ 250.0%"
+        },
+        {
+          "metric": "Geographic Exposure",
+          "category": "Diversification",
+          "current": "1",
+          "optimized": "4",
+          "change": "↑ 300.0%"
+        },
+        {
+          "metric": "Correlation to S&P 500",
+          "category": "Diversification",
+          "current": "0.94",
+          "optimized": "0.68",
+          "change": "↓ 27.7%"
+        },
+        {
+          "metric": "Annual Income Projection",
+          "category": "Income Generation",
+          "current": "$112,500",
+          "optimized": "$625,000",
+          "change": "↑ 455.6%"
+        },
+        {
+          "metric": "Dividend Yield",
+          "category": "Income Generation",
+          "current": "0.5%",
+          "optimized": "2.5%",
+          "change": "↑ 400.0%"
+        }
+      ]
+    }
+  },
+  "tax_analysis": {
+    "title": "TAX TRANSITION ANALYSIS",
+    "subtitle": "Capital Gains Management & Tax-Efficient Liquidation Strategy | February 2026",
+    "capital_gains_overview": {
+      "label": "Capital Gains Overview",
+      "items": [
+        {
+          "item": "Current Portfolio Value",
+          "value": 25000000,
+          "notes": "Total market value"
+        },
+        {
+          "item": "Estimated Cost Basis",
+          "value": 6500000,
+          "notes": "Original acquisition cost"
+        },
+        {
+          "item": "Unrealized Capital Gains",
+          "value": 18500000,
+          "notes": "Portfolio Value − Cost Basis"
+        },
+        {
+          "item": "Federal Long-Term Cap Gains Rate",
+          "value": 0.2,
+          "notes": "Top federal rate on long-term gains"
+        },
+        {
+          "item": "Net Investment Income Tax (NIIT)",
+          "value": 0.038,
+          "notes": "Medicare surtax on investment income (IRC §1411)"
+        },
+        {
+          "item": "State Tax Rate (CA)",
+          "value": 0.133,
+          "notes": "Highest marginal CA rate"
+        },
+        {
+          "item": "Gross Effective Rate",
+          "value": 0.371,
+          "notes": "Fed + NIIT + State"
+        },
+        {
+          "item": "Estimated Gross Tax Liability",
+          "value": 6863500,
+          "notes": "Unrealized Gains × Effective Rate"
+        },
+        {
+          "item": "Tax-Loss Harvesting Offset",
+          "value": -850000,
+          "notes": "Identified losses to offset gains"
+        },
+        {
+          "item": "Net Tax Liability (After Offset)",
+          "value": 6013500,
+          "notes": "Gross Tax − Offset"
+        }
+      ]
+    },
+    "phased_liquidation_schedule": {
+      "label": "Phased Liquidation Schedule — 5 Tranches Over 8 Months",
+      "columns": [
+        "Tranche / Month",
+        "Amount Liquidated",
+        "Est. Tax Impact",
+        "Cumulative Liquidated"
+      ],
+      "rows": [
+        {
+          "tranche": "Tranche 1 (Month 4)",
+          "amount_liquidated": 4500000,
+          "est_tax_impact": 1669500,
+          "cumulative_liquidated": 4500000
+        },
+        {
+          "tranche": "Tranche 2 (Month 5)",
+          "amount_liquidated": 4500000,
+          "est_tax_impact": 1669500,
+          "cumulative_liquidated": 9000000
+        },
+        {
+          "tranche": "Tranche 3 (Month 6)",
+          "amount_liquidated": 4500000,
+          "est_tax_impact": 1669500,
+          "cumulative_liquidated": 13500000
+        },
+        {
+          "tranche": "Tranche 4 (Month 7)",
+          "amount_liquidated": 4500000,
+          "est_tax_impact": 1669500,
+          "cumulative_liquidated": 18000000
+        },
+        {
+          "tranche": "Tranche 5 (Month 8)",
+          "amount_liquidated": 4500000,
+          "est_tax_impact": 1669500,
+          "cumulative_liquidated": 22500000
+        },
+        {
+          "tranche": "TOTAL",
+          "amount_liquidated": 22500000,
+          "est_tax_impact": 8347500,
+          "cumulative_liquidated": 22500000
+        }
+      ]
+    },
+    "tax_optimization_strategies": {
+      "label": "Tax Optimization Strategies",
+      "rows": [
+        {
+          "strategy": "Tax-Loss Harvesting",
+          "est_value": 850000,
+          "description": "Identify offsetting losses in fixed income and other equity positions. Reduces net taxable gain dollar-for-dollar."
+        },
+        {
+          "strategy": "Donor-Advised Fund (DAF)",
+          "est_value": 500000,
+          "description": "Contribute appreciated shares directly to DAF. Avoid capital gains entirely; receive fair-market-value charitable deduction."
+        },
+        {
+          "strategy": "Qualified Opportunity Zone (QOZ)",
+          "est_value": 1000000,
+          "description": "Invest deferred gains into QOZ fund. Defer recognition and potentially exclude future appreciation after 10-year hold."
+        },
+        {
+          "strategy": "Installment Liquidation Structure",
+          "est_value": "Structural",
+          "description": "5 monthly tranches across Months 4-8 within a single tax year. To split recognition across two tax years, time the final tranche(s) after December 31."
+        },
+        {
+          "strategy": "Charitable Remainder Trust (CRT)",
+          "est_value": "Structural",
+          "description": "Transfer appreciated stock into CRT. Avoid immediate gain, receive income stream, estate planning benefit."
+        }
+      ]
+    },
+    "disclaimer": "All tax figures are estimates. Actual liability depends on cost basis, holding period, filing status, and applicable deductions."
+  },
+  "sbl_credit": {
+    "title": "SECURITIES-BASED LENDING (SBL) CREDIT FACILITY",
+    "subtitle": "$5M Non-Purpose Credit Facility | Private Foundation Funding Strategy | February 2026",
+    "credit_facility_structure": {
+      "label": "Credit Facility Structure",
+      "items": [
+        {
+          "parameter": "Loan Purpose",
+          "value": "Non-Purpose Loan",
+          "notes": "Proceeds may not purchase or carry securities (Reg U)"
+        },
+        {
+          "parameter": "Loan Amount",
+          "value": 5000000,
+          "notes": "60% of diversified portfolio pledged"
+        },
+        {
+          "parameter": "Collateral Portfolio Value",
+          "value": 15000000,
+          "notes": "60% of diversified portfolio pledged"
+        },
+        {
+          "parameter": "Loan-to-Value (LTV)",
+          "value": 0.3333,
+          "notes": "Loan ÷ Collateral"
+        },
+        {
+          "parameter": "Margin Call Trigger",
+          "value": 0.4,
+          "notes": "LTV level requiring additional collateral"
+        },
+        {
+          "parameter": "SOFR Benchmark Rate",
+          "value": 0.045,
+          "notes": "Secured Overnight Financing Rate"
+        },
+        {
+          "parameter": "Credit Spread",
+          "value": 0.02,
+          "notes": "Institutional UHNW pricing"
+        },
+        {
+          "parameter": "All-In Interest Rate",
+          "value": 0.065,
+          "notes": "SOFR + Spread"
+        },
+        {
+          "parameter": "Effective After-Tax Rate",
+          "value": 0.04095,
+          "notes": "All-In × (1 − Tax Bracket)"
+        },
+        {
+          "parameter": "Payment Structure",
+          "value": "Interest-Only",
+          "notes": "No mandatory principal amortization; annual rate resets"
+        },
+        {
+          "parameter": "Facility Term",
+          "value": "12 Months (Renewable)",
+          "notes": "Annually renewable at bank's discretion; no prepayment penalty"
+        },
+        {
+          "parameter": "Annual Gross Interest",
+          "value": 325000,
+          "notes": "Loan Amount × All-In Rate"
+        },
+        {
+          "parameter": "Annual After-Tax Interest",
+          "value": 204750,
+          "notes": "Annual Gross × (1 − Tax Bracket)"
+        },
+        {
+          "parameter": "Use of Proceeds",
+          "value": "Private Foundation Seed Capital",
+          "notes": "Fund $10M philanthropic vehicle without triggering capital gains"
+        }
+      ]
+    },
+    "payment_schedule": {
+      "label": "Interest-Only Payment Schedule — 12-Month Facility",
+      "columns": [
+        "Period",
+        "Beginning Balance",
+        "Monthly Interest",
+        "Principal Payment",
+        "Ending Balance"
+      ],
+      "rows": [
+        {
+          "period": "Month 1",
+          "beginning_balance": 5000000,
+          "monthly_interest": 27083.33,
+          "principal_payment": 0,
+          "ending_balance": 5000000
+        },
+        {
+          "period": "Month 2",
+          "beginning_balance": 5000000,
+          "monthly_interest": 27083.33,
+          "principal_payment": 0,
+          "ending_balance": 5000000
+        },
+        {
+          "period": "Month 3",
+          "beginning_balance": 5000000,
+          "monthly_interest": 27083.33,
+          "principal_payment": 0,
+          "ending_balance": 5000000
+        },
+        {
+          "period": "Month 4",
+          "beginning_balance": 5000000,
+          "monthly_interest": 27083.33,
+          "principal_payment": 0,
+          "ending_balance": 5000000
+        },
+        {
+          "period": "Month 5",
+          "beginning_balance": 5000000,
+          "monthly_interest": 27083.33,
+          "principal_payment": 0,
+          "ending_balance": 5000000
+        },
+        {
+          "period": "Month 6",
+          "beginning_balance": 5000000,
+          "monthly_interest": 27083.33,
+          "principal_payment": 0,
+          "ending_balance": 5000000
+        },
+        {
+          "period": "Month 7",
+          "beginning_balance": 5000000,
+          "monthly_interest": 27083.33,
+          "principal_payment": 0,
+          "ending_balance": 5000000
+        },
+        {
+          "period": "Month 8",
+          "beginning_balance": 5000000,
+          "monthly_interest": 27083.33,
+          "principal_payment": 0,
+          "ending_balance": 5000000
+        },
+        {
+          "period": "Month 9",
+          "beginning_balance": 5000000,
+          "monthly_interest": 27083.33,
+          "principal_payment": 0,
+          "ending_balance": 5000000
+        },
+        {
+          "period": "Month 10",
+          "beginning_balance": 5000000,
+          "monthly_interest": 27083.33,
+          "principal_payment": 0,
+          "ending_balance": 5000000
+        },
+        {
+          "period": "Month 11",
+          "beginning_balance": 5000000,
+          "monthly_interest": 27083.33,
+          "principal_payment": 0,
+          "ending_balance": 5000000
+        },
+        {
+          "period": "Month 12",
+          "beginning_balance": 5000000,
+          "monthly_interest": 27083.33,
+          "principal_payment": 0,
+          "ending_balance": 5000000
+        },
+        {
+          "period": "TOTAL ANNUAL INTEREST",
+          "beginning_balance": 5000000,
+          "monthly_interest": 325000,
+          "principal_payment": 0,
+          "ending_balance": 5000000
+        }
+      ]
+    },
+    "margin_call_stress_test": {
+      "label": "Margin Call Stress Test",
+      "columns": [
+        "Scenario",
+        "Collateral Decline",
+        "Collateral Value",
+        "Resulting LTV",
+        "Margin Call Triggered"
+      ],
+      "rows": [
+        {
+          "scenario": "Base Case",
+          "collateral_decline": "0% (Baseline)",
+          "collateral_value": 15000000,
+          "resulting_ltv": 0.3333,
+          "margin_call": false
+        },
+        {
+          "scenario": "Moderate Decline",
+          "collateral_decline": "-10%",
+          "collateral_value": 13500000,
+          "resulting_ltv": 0.3704,
+          "margin_call": false
+        },
+        {
+          "scenario": "Significant Drop",
+          "collateral_decline": "-20%",
+          "collateral_value": 12000000,
+          "resulting_ltv": 0.4167,
+          "margin_call": true
+        },
+        {
+          "scenario": "Severe Stress",
+          "collateral_decline": "-30%",
+          "collateral_value": 10500000,
+          "resulting_ltv": 0.4762,
+          "margin_call": true
+        },
+        {
+          "scenario": "2008-Style Crisis",
+          "collateral_decline": "-40%",
+          "collateral_value": 9000000,
+          "resulting_ltv": 0.5556,
+          "margin_call": true
+        },
+        {
+          "scenario": "Extreme Tail Risk",
+          "collateral_decline": "-50%",
+          "collateral_value": 7500000,
+          "resulting_ltv": 0.6667,
+          "margin_call": true
+        }
+      ]
+    },
+    "sbl_vs_liquidation": {
+      "label": "SBL vs. Outright Liquidation — Tax Arbitrage Analysis",
+      "columns": [
+        "Comparison Factor",
+        "Liquidate & Pay Gains",
+        "SBL Credit Facility",
+        "SBL Advantage"
+      ],
+      "rows": [
+        {
+          "factor": "Immediate Tax Cost",
+          "liquidate": 1855000,
+          "sbl": 0,
+          "advantage": "SBL defers this tax indefinitely"
+        },
+        {
+          "factor": "Annual Carry Cost",
+          "liquidate": 0,
+          "sbl": 204750,
+          "advantage": "After-tax interest replaces upfront tax burden"
+        },
+        {
+          "factor": "Capital Deployed to Foundation",
+          "liquidate": 3145000,
+          "sbl": 5000000,
+          "advantage": "SBL delivers full loan amount; liquidation loses tax portion"
+        },
+        {
+          "factor": "Portfolio Assets Still Compounding",
+          "liquidate": 20000000,
+          "sbl": 25000000,
+          "advantage": "SBL preserves the full $25M base"
+        },
+        {
+          "factor": "Est. Portfolio Return on Preserved Capital (Yr 1)",
+          "liquidate": null,
+          "sbl": 490000,
+          "advantage": "Base case return × preserved capital"
+        },
+        {
+          "factor": "Net Annual Benefit of SBL (Yr 1)",
+          "liquidate": null,
+          "sbl": 285250,
+          "advantage": "Portfolio return on preserved capital minus carry cost"
+        },
+        {
+          "factor": "SBL Breakeven vs. Liquidation",
+          "liquidate": null,
+          "sbl": "3.1 Years",
+          "advantage": "Complex NPV calculation"
+        },
+        {
+          "factor": "10-Year SBL Advantage",
+          "liquidate": null,
+          "sbl": 7124500,
+          "advantage": "Tax saved + compounding opportunity cost over 10 years"
+        }
+      ]
+    }
+  },
+  "goals_planning": {
+    "title": "GOALS-BASED WEALTH PLANNING",
+    "subtitle": "$10M Private Foundation | 20-Year Portfolio Projection | Bear / Base / Bull Scenarios | February 2026",
+    "planning_assumptions": {
+      "label": "Planning Assumptions",
+      "columns": [
+        "Parameter",
+        "Bear Case",
+        "Base Case",
+        "Bull Case",
+        "Notes"
+      ],
+      "rows": [
+        {
+          "parameter": "Starting Portfolio Value",
+          "bear": 18986500,
+          "base": 18986500,
+          "bull": 18986500,
+          "notes": "Net of estimated tax after harvesting offset"
+        },
+        {
+          "parameter": "Expected Gross Annual Return",
+          "bear": 0.05,
+          "base": 0.098,
+          "bull": 0.135,
+          "notes": "Edit individual scenario returns in Inputs"
+        },
+        {
+          "parameter": "Annual Withdrawal Rate",
+          "bear": 0.02,
+          "base": 0.02,
+          "bull": 0.02,
+          "notes": "Applied uniformly across all scenarios"
+        },
+        {
+          "parameter": "Net Annual Growth Rate",
+          "bear": 0.03,
+          "base": 0.078,
+          "bull": 0.115,
+          "notes": "Return minus Withdrawal Rate — drives the projection"
+        },
+        {
+          "parameter": "Investment Horizon",
+          "bear": "20 Years",
+          "base": "20 Years",
+          "bull": "20 Years",
+          "notes": "Long-term compounding window"
+        },
+        {
+          "parameter": "Private Foundation Target",
+          "bear": 10000000,
+          "base": 10000000,
+          "bull": 10000000,
+          "notes": "Philanthropic endowment goal"
+        },
+        {
+          "parameter": "Foundation Funding Method",
+          "bear": "SBL Facility",
+          "base": "SBL Facility",
+          "bull": "SBL Facility",
+          "notes": "$5M drawn from credit line — zero liquidation, zero additional tax"
+        },
+        {
+          "parameter": "Annual SBL Interest Cost",
+          "bear": 204750,
+          "base": 204750,
+          "bull": 204750,
+          "notes": "After-tax interest — updates with rate or loan changes"
+        }
+      ]
+    },
+    "twenty_year_projection": {
+      "label": "20-Year Portfolio Projection",
+      "columns": [
+        "Year",
+        "Calendar Year",
+        "Bear Case (Net 3.0%)",
+        "Base Case (Net 7.8%)",
+        "Bull Case (Net 11.5%)",
+        "Milestone"
+      ],
+      "rows": [
+        {
+          "year": "Year  1",
+          "calendar_year": 2027,
+          "bear": 19556095,
+          "base": 20467447,
+          "bull": 21169947.5,
+          "milestone": "SBL Facility Established"
+        },
+        {
+          "year": "Year  2",
+          "calendar_year": 2028,
+          "bear": 20142778,
+          "base": 22063908,
+          "bull": 23604491,
+          "milestone": null
+        },
+        {
+          "year": "Year  3",
+          "calendar_year": 2029,
+          "bear": 20747061,
+          "base": 23784893,
+          "bull": 26319008,
+          "milestone": null
+        },
+        {
+          "year": "Year  4",
+          "calendar_year": 2030,
+          "bear": 21369473,
+          "base": 25640114,
+          "bull": 29345694,
+          "milestone": null
+        },
+        {
+          "year": "Year  5",
+          "calendar_year": 2031,
+          "bear": 22010557,
+          "base": 27640043,
+          "bull": 32720449,
+          "milestone": "5-Year Review"
+        },
+        {
+          "year": "Year  6",
+          "calendar_year": 2032,
+          "bear": 22670874,
+          "base": 29795967,
+          "bull": 36483300,
+          "milestone": null
+        },
+        {
+          "year": "Year  7",
+          "calendar_year": 2033,
+          "bear": 23351000,
+          "base": 32120052,
+          "bull": 40678880,
+          "milestone": null
+        },
+        {
+          "year": "Year  8",
+          "calendar_year": 2034,
+          "bear": 24051530,
+          "base": 34625416,
+          "bull": 45356951,
+          "milestone": null
+        },
+        {
+          "year": "Year  9",
+          "calendar_year": 2035,
+          "bear": 24773076,
+          "base": 37326198,
+          "bull": 50573000,
+          "milestone": null
+        },
+        {
+          "year": "Year 10",
+          "calendar_year": 2036,
+          "bear": 25516268,
+          "base": 40237642,
+          "bull": 56388895,
+          "milestone": "Foundation Self-Sustaining"
+        },
+        {
+          "year": "Year 11",
+          "calendar_year": 2037,
+          "bear": 26281756,
+          "base": 43376178,
+          "bull": 62873618,
+          "milestone": null
+        },
+        {
+          "year": "Year 12",
+          "calendar_year": 2038,
+          "bear": 27070209,
+          "base": 46759520,
+          "bull": 70104085,
+          "milestone": null
+        },
+        {
+          "year": "Year 13",
+          "calendar_year": 2039,
+          "bear": 27882315,
+          "base": 50406762,
+          "bull": 78166054,
+          "milestone": null
+        },
+        {
+          "year": "Year 14",
+          "calendar_year": 2040,
+          "bear": 28718785,
+          "base": 54338490,
+          "bull": 87155150,
+          "milestone": null
+        },
+        {
+          "year": "Year 15",
+          "calendar_year": 2041,
+          "bear": 29580348,
+          "base": 58576892,
+          "bull": 97177993,
+          "milestone": "15-Year Review"
+        },
+        {
+          "year": "Year 16",
+          "calendar_year": 2042,
+          "bear": 30467759,
+          "base": 63145890,
+          "bull": 108353462,
+          "milestone": null
+        },
+        {
+          "year": "Year 17",
+          "calendar_year": 2043,
+          "bear": 31381792,
+          "base": 68071269,
+          "bull": 120814110,
+          "milestone": null
+        },
+        {
+          "year": "Year 18",
+          "calendar_year": 2044,
+          "bear": 32323245,
+          "base": 73380828,
+          "bull": 134707733,
+          "milestone": null
+        },
+        {
+          "year": "Year 19",
+          "calendar_year": 2045,
+          "bear": 33292943,
+          "base": 79104533,
+          "bull": 150199122,
+          "milestone": null
+        },
+        {
+          "year": "Year 20",
+          "calendar_year": 2046,
+          "bear": 34291731,
+          "base": 85274686,
+          "bull": 167472021,
+          "milestone": "▲ Planning Horizon"
+        }
+      ]
+    },
+    "foundation_funding_analysis": {
+      "label": "Private Foundation Funding Analysis",
+      "columns": [
+        "Milestone",
+        "Year",
+        "Foundation Value",
+        "Cumulative Grants",
+        "Endowment Status",
+        "Notes"
+      ],
+      "rows": [
+        {
+          "milestone": "SBL Proceeds Deployed",
+          "year": "Year 1",
+          "foundation_value": 5000000,
+          "cumulative_grants": 0,
+          "status": "Foundation Seeded",
+          "notes": "100% via SBL — zero additional liquidation. $70,760/yr contribution begins Year 1."
+        },
+        {
+          "milestone": "Foundation — Year 5",
+          "year": "Year 5",
+          "foundation_value": 6028979,
+          "cumulative_grants": 1250000,
+          "status": "Growing",
+          "notes": "7.5% return net of 5% grantmaking + $70,760/yr client contribution"
+        },
+        {
+          "milestone": "Foundation — Year 10",
+          "year": "Year 10",
+          "foundation_value": 7193174,
+          "cumulative_grants": 2500000,
+          "status": "Growing",
+          "notes": "Projected $7.2M at Year 10 — seed + annual contributions"
+        },
+        {
+          "milestone": "SBL Loan Fully Repaid",
+          "year": "Year 10",
+          "foundation_value": 7193174,
+          "cumulative_grants": 2500000,
+          "status": "Debt-Free",
+          "notes": "Loan retired from portfolio income — no asset sales"
+        },
+        {
+          "milestone": "Foundation — Year 20 (Proj.)",
+          "year": "Year 20",
+          "foundation_value": 10000622,
+          "cumulative_grants": 5000000,
+          "status": "Target Achieved",
+          "notes": "$10M target reached: $5M seed + $70,760/yr from portfolio income"
+        }
+      ],
+      "formula_note": "Foundation value = Seed × (1 + Net Return)^Year + Annual Contribution × ((1 + Net Return)^Year − 1) / Net Return. Net Return = Foundation Annual Return − Annual Payout. Annual Contribution sourced from diversified portfolio income ($625K/yr)."
+    }
+  },
+  "csv_data": {
+    "portfolio_transition_analysis": [
+      {
+        "Portfolio_Type": "Current_Concentrated",
+        "Asset_Class": "Public Equity",
+        "Sub_Category": "US Large Cap Tech",
+        "Allocation_Percent": "90.0",
+        "Market_Value_USD": "22500000",
+        "Expected_Return_Percent": "12.5",
+        "Standard_Deviation_Percent": "28.0",
+        "Sharpe_Ratio": "0.38",
+        "Liquidity_Rating": "High",
+        "Tax_Efficiency_Score": "Low",
+        "Diversification_Score": "Poor"
+      },
+      {
+        "Portfolio_Type": "Current_Concentrated",
+        "Asset_Class": "Cash & Equivalents",
+        "Sub_Category": "Money Market",
+        "Allocation_Percent": "10.0",
+        "Market_Value_USD": "2500000",
+        "Expected_Return_Percent": "4.5",
+        "Standard_Deviation_Percent": "1.0",
+        "Sharpe_Ratio": "0.00",
+        "Liquidity_Rating": "Very High",
+        "Tax_Efficiency_Score": "High",
+        "Diversification_Score": "Poor"
+      },
+      {
+        "Portfolio_Type": "JPM_Diversified",
+        "Asset_Class": "Public Equity",
+        "Sub_Category": "US Large Cap",
+        "Allocation_Percent": "25.0",
+        "Market_Value_USD": "6250000",
+        "Expected_Return_Percent": "10.2",
+        "Standard_Deviation_Percent": "16.5",
+        "Sharpe_Ratio": "0.52",
+        "Liquidity_Rating": "High",
+        "Tax_Efficiency_Score": "Medium",
+        "Diversification_Score": "Excellent"
+      },
+      {
+        "Portfolio_Type": "JPM_Diversified",
+        "Asset_Class": "Public Equity",
+        "Sub_Category": "US Mid Cap",
+        "Allocation_Percent": "8.0",
+        "Market_Value_USD": "2000000",
+        "Expected_Return_Percent": "11.5",
+        "Standard_Deviation_Percent": "20.0",
+        "Sharpe_Ratio": "0.50",
+        "Liquidity_Rating": "High",
+        "Tax_Efficiency_Score": "Medium",
+        "Diversification_Score": "Excellent"
+      },
+      {
+        "Portfolio_Type": "JPM_Diversified",
+        "Asset_Class": "Public Equity",
+        "Sub_Category": "US Small Cap",
+        "Allocation_Percent": "5.0",
+        "Market_Value_USD": "1250000",
+        "Expected_Return_Percent": "12.0",
+        "Standard_Deviation_Percent": "22.0",
+        "Sharpe_Ratio": "0.47",
+        "Liquidity_Rating": "Medium",
+        "Tax_Efficiency_Score": "Medium",
+        "Diversification_Score": "Excellent"
+      },
+      {
+        "Portfolio_Type": "JPM_Diversified",
+        "Asset_Class": "Public Equity",
+        "Sub_Category": "International Developed",
+        "Allocation_Percent": "12.0",
+        "Market_Value_USD": "3000000",
+        "Expected_Return_Percent": "9.5",
+        "Standard_Deviation_Percent": "18.0",
+        "Sharpe_Ratio": "0.44",
+        "Liquidity_Rating": "High",
+        "Tax_Efficiency_Score": "Medium",
+        "Diversification_Score": "Excellent"
+      },
+      {
+        "Portfolio_Type": "JPM_Diversified",
+        "Asset_Class": "Public Equity",
+        "Sub_Category": "Emerging Markets",
+        "Allocation_Percent": "5.0",
+        "Market_Value_USD": "1250000",
+        "Expected_Return_Percent": "11.0",
+        "Standard_Deviation_Percent": "25.0",
+        "Sharpe_Ratio": "0.38",
+        "Liquidity_Rating": "Medium",
+        "Tax_Efficiency_Score": "Medium",
+        "Diversification_Score": "Excellent"
+      },
+      {
+        "Portfolio_Type": "JPM_Diversified",
+        "Asset_Class": "Fixed Income",
+        "Sub_Category": "Investment Grade Bonds",
+        "Allocation_Percent": "15.0",
+        "Market_Value_USD": "3750000",
+        "Expected_Return_Percent": "5.2",
+        "Standard_Deviation_Percent": "6.0",
+        "Sharpe_Ratio": "0.45",
+        "Liquidity_Rating": "High",
+        "Tax_Efficiency_Score": "High",
+        "Diversification_Score": "Excellent"
+      },
+      {
+        "Portfolio_Type": "JPM_Diversified",
+        "Asset_Class": "Fixed Income",
+        "Sub_Category": "High Yield Bonds",
+        "Allocation_Percent": "5.0",
+        "Market_Value_USD": "1250000",
+        "Expected_Return_Percent": "7.5",
+        "Standard_Deviation_Percent": "12.0",
+        "Sharpe_Ratio": "0.46",
+        "Liquidity_Rating": "Medium",
+        "Tax_Efficiency_Score": "Medium",
+        "Diversification_Score": "Excellent"
+      },
+      {
+        "Portfolio_Type": "JPM_Diversified",
+        "Asset_Class": "Fixed Income",
+        "Sub_Category": "Municipal Bonds",
+        "Allocation_Percent": "3.0",
+        "Market_Value_USD": "750000",
+        "Expected_Return_Percent": "4.0",
+        "Standard_Deviation_Percent": "5.5",
+        "Sharpe_Ratio": "0.27",
+        "Liquidity_Rating": "High",
+        "Tax_Efficiency_Score": "Very High",
+        "Diversification_Score": "Excellent"
+      },
+      {
+        "Portfolio_Type": "JPM_Diversified",
+        "Asset_Class": "Private Equity",
+        "Sub_Category": "Buyout Funds",
+        "Allocation_Percent": "8.0",
+        "Market_Value_USD": "2000000",
+        "Expected_Return_Percent": "14.0",
+        "Standard_Deviation_Percent": "20.0",
+        "Sharpe_Ratio": "0.58",
+        "Liquidity_Rating": "Very Low",
+        "Tax_Efficiency_Score": "High",
+        "Diversification_Score": "Excellent"
+      },
+      {
+        "Portfolio_Type": "JPM_Diversified",
+        "Asset_Class": "Private Equity",
+        "Sub_Category": "Venture Capital",
+        "Allocation_Percent": "4.0",
+        "Market_Value_USD": "1000000",
+        "Expected_Return_Percent": "16.0",
+        "Standard_Deviation_Percent": "30.0",
+        "Sharpe_Ratio": "0.47",
+        "Liquidity_Rating": "Very Low",
+        "Tax_Efficiency_Score": "High",
+        "Diversification_Score": "Excellent"
+      },
+      {
+        "Portfolio_Type": "JPM_Diversified",
+        "Asset_Class": "Real Estate",
+        "Sub_Category": "Core Real Estate",
+        "Allocation_Percent": "5.0",
+        "Market_Value_USD": "1250000",
+        "Expected_Return_Percent": "8.5",
+        "Standard_Deviation_Percent": "12.0",
+        "Sharpe_Ratio": "0.54",
+        "Liquidity_Rating": "Low",
+        "Tax_Efficiency_Score": "High",
+        "Diversification_Score": "Excellent"
+      },
+      {
+        "Portfolio_Type": "JPM_Diversified",
+        "Asset_Class": "Real Estate",
+        "Sub_Category": "Real Estate Opportunistic",
+        "Allocation_Percent": "3.0",
+        "Market_Value_USD": "750000",
+        "Expected_Return_Percent": "12.0",
+        "Standard_Deviation_Percent": "18.0",
+        "Sharpe_Ratio": "0.56",
+        "Liquidity_Rating": "Very Low",
+        "Tax_Efficiency_Score": "Medium",
+        "Diversification_Score": "Excellent"
+      },
+      {
+        "Portfolio_Type": "JPM_Diversified",
+        "Asset_Class": "Cash & Equivalents",
+        "Sub_Category": "Money Market",
+        "Allocation_Percent": "2.0",
+        "Market_Value_USD": "500000",
+        "Expected_Return_Percent": "4.5",
+        "Standard_Deviation_Percent": "1.0",
+        "Sharpe_Ratio": "0.00",
+        "Liquidity_Rating": "Very High",
+        "Tax_Efficiency_Score": "High",
+        "Diversification_Score": "Excellent"
+      },
+      {
+        "Portfolio_Type": "Current_Concentrated",
+        "Asset_Class": "Public Equity",
+        "Sub_Category": "Technology Sector",
+        "Allocation_Percent": "90.0",
+        "Market_Value_USD": "22500000",
+        "Expected_Return_Percent": "12.5",
+        "Standard_Deviation_Percent": "28.0",
+        "Sharpe_Ratio": "0.38",
+        "Liquidity_Rating": "High",
+        "Tax_Efficiency_Score": "Low",
+        "Diversification_Score": "Poor"
+      },
+      {
+        "Portfolio_Type": "JPM_Diversified",
+        "Asset_Class": "Alternative Investments",
+        "Sub_Category": "Hedge Funds Multi-Strategy",
+        "Allocation_Percent": "0.0",
+        "Market_Value_USD": "0",
+        "Expected_Return_Percent": "8.0",
+        "Standard_Deviation_Percent": "10.0",
+        "Sharpe_Ratio": "0.50",
+        "Liquidity_Rating": "Low",
+        "Tax_Efficiency_Score": "Medium",
+        "Diversification_Score": "Excellent"
+      }
+    ],
+    "sbl_credit_strategy": [
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Loan_Structure",
+        "Metric_Name": "Initial_Loan_Amount",
+        "Value": "5000000",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Credit line for Private Foundation seed funding"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Loan_Structure",
+        "Metric_Name": "Collateral_Portfolio_Value",
+        "Value": "15000000",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Diversified portfolio pledged as collateral (60% of total)"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Loan_Structure",
+        "Metric_Name": "Loan_to_Value_Ratio",
+        "Value": "33.3",
+        "Unit": "Percent",
+        "Year": "0",
+        "Description": "Conservative LTV to avoid margin call risk"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Loan_Structure",
+        "Metric_Name": "Margin_Call_Trigger",
+        "Value": "40.0",
+        "Unit": "Percent",
+        "Year": "0",
+        "Description": "LTV threshold requiring additional collateral"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Loan_Structure",
+        "Metric_Name": "Interest_Rate_SOFR_Plus_Spread",
+        "Value": "6.50",
+        "Unit": "Percent",
+        "Year": "0",
+        "Description": "SOFR (4.5%) + 200bps spread for UHNW tier"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Loan_Structure",
+        "Metric_Name": "Loan_Term",
+        "Value": "10",
+        "Unit": "Years",
+        "Year": "0",
+        "Description": "Interest-only with annual rate resets"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Loan_Structure",
+        "Metric_Name": "Prepayment_Penalty",
+        "Value": "0",
+        "Unit": "Percent",
+        "Year": "0",
+        "Description": "Full flexibility to pay down at any time"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Annual_Costs",
+        "Metric_Name": "Year_1_Interest_Expense",
+        "Value": "325000",
+        "Unit": "USD",
+        "Year": "1",
+        "Description": "Tax-deductible if used for investment purposes"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Annual_Costs",
+        "Metric_Name": "Year_2_Interest_Expense",
+        "Value": "325000",
+        "Unit": "USD",
+        "Year": "2",
+        "Description": "Assumes stable interest rate environment"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Annual_Costs",
+        "Metric_Name": "Year_3_Interest_Expense",
+        "Value": "325000",
+        "Unit": "USD",
+        "Year": "3",
+        "Description": "Fixed spread over SOFR benchmark"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Annual_Costs",
+        "Metric_Name": "Year_4_Interest_Expense",
+        "Value": "325000",
+        "Unit": "USD",
+        "Year": "4",
+        "Description": "Annual review for rate adjustment"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Annual_Costs",
+        "Metric_Name": "Year_5_Interest_Expense",
+        "Value": "325000",
+        "Unit": "USD",
+        "Year": "5",
+        "Description": "Cumulative interest: $1.625M"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Annual_Costs",
+        "Metric_Name": "Cumulative_Interest_10_Years",
+        "Value": "3250000",
+        "Unit": "USD",
+        "Year": "10",
+        "Description": "Total interest cost over full term"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Tax_Benefits",
+        "Metric_Name": "Interest_Tax_Deduction_Year_1",
+        "Value": "325000",
+        "Unit": "USD",
+        "Year": "1",
+        "Description": "Deductible against investment income"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Tax_Benefits",
+        "Metric_Name": "Tax_Savings_at_37_Percent_Bracket",
+        "Value": "120250",
+        "Unit": "USD",
+        "Year": "1",
+        "Description": "Federal tax benefit (37% top rate)"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Tax_Benefits",
+        "Metric_Name": "Net_After_Tax_Interest_Cost",
+        "Value": "204750",
+        "Unit": "USD",
+        "Year": "1",
+        "Description": "Effective annual borrowing cost"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Tax_Benefits",
+        "Metric_Name": "Effective_Interest_Rate_After_Tax",
+        "Value": "4.10",
+        "Unit": "Percent",
+        "Year": "1",
+        "Description": "Net cost: 6.5% × (1 - 0.37)"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Liquidity",
+        "Metric_Name": "Immediate_Cash_Generated",
+        "Value": "5000000",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Foundation funding without asset sales"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Liquidity",
+        "Metric_Name": "Remaining_Liquid_Portfolio",
+        "Value": "20000000",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Unpledged assets remain accessible"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Liquidity",
+        "Metric_Name": "Total_Portfolio_Liquidity",
+        "Value": "25000000",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Full balance sheet flexibility preserved"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Risk_Management",
+        "Metric_Name": "Collateral_Diversification_Score",
+        "Value": "85",
+        "Unit": "Index_0_100",
+        "Year": "0",
+        "Description": "Multi-asset portfolio reduces volatility risk"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Risk_Management",
+        "Metric_Name": "Daily_Portfolio_Monitoring",
+        "Value": "Yes",
+        "Unit": "Boolean",
+        "Year": "0",
+        "Description": "Real-time LTV tracking via JPM platform"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Risk_Management",
+        "Metric_Name": "Emergency_Cash_Reserve",
+        "Value": "2500000",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "10% portfolio buffer for margin calls"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Risk_Management",
+        "Metric_Name": "Stress_Test_2008_Scenario_LTV",
+        "Value": "28.5",
+        "Unit": "Percent",
+        "Year": "0",
+        "Description": "LTV if collateral drops 35% (still safe)"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Risk_Management",
+        "Metric_Name": "Stress_Test_2020_Scenario_LTV",
+        "Value": "31.2",
+        "Unit": "Percent",
+        "Year": "0",
+        "Description": "LTV if collateral drops 25% (within limits)"
+      },
+      {
+        "Strategy_Type": "Outright_Sale",
+        "Metric_Category": "Tax_Impact",
+        "Metric_Name": "Capital_Gains_on_5M_Sale",
+        "Value": "5000000",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Selling $5M of concentrated tech stock"
+      },
+      {
+        "Strategy_Type": "Outright_Sale",
+        "Metric_Category": "Tax_Impact",
+        "Metric_Name": "Cost_Basis_Assumption",
+        "Value": "500000",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Original investment (90% unrealized gain)"
+      },
+      {
+        "Strategy_Type": "Outright_Sale",
+        "Metric_Category": "Tax_Impact",
+        "Metric_Name": "Taxable_Gain",
+        "Value": "4500000",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Sale proceeds minus cost basis"
+      },
+      {
+        "Strategy_Type": "Outright_Sale",
+        "Metric_Category": "Tax_Impact",
+        "Metric_Name": "Federal_Capital_Gains_Tax_20_Percent",
+        "Value": "900000",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Long-term capital gains at top rate"
+      },
+      {
+        "Strategy_Type": "Outright_Sale",
+        "Metric_Category": "Tax_Impact",
+        "Metric_Name": "Net_Investment_Income_Tax_3_8_Percent",
+        "Value": "171000",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Medicare surtax on investment income"
+      },
+      {
+        "Strategy_Type": "Outright_Sale",
+        "Metric_Category": "Tax_Impact",
+        "Metric_Name": "State_Tax_California_13_3_Percent",
+        "Value": "598500",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Highest state tax jurisdiction example"
+      },
+      {
+        "Strategy_Type": "Outright_Sale",
+        "Metric_Category": "Tax_Impact",
+        "Metric_Name": "Total_Tax_Liability",
+        "Value": "1669500",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Combined federal and state tax burden"
+      },
+      {
+        "Strategy_Type": "Outright_Sale",
+        "Metric_Category": "Tax_Impact",
+        "Metric_Name": "Net_Cash_After_Tax",
+        "Value": "3330500",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Only $3.3M available for foundation"
+      },
+      {
+        "Strategy_Type": "Outright_Sale",
+        "Metric_Category": "Opportunity_Cost",
+        "Metric_Name": "Foregone_Portfolio_Growth_Year_1",
+        "Value": "490000",
+        "Unit": "USD",
+        "Year": "1",
+        "Description": "9.8% return on $5M not invested"
+      },
+      {
+        "Strategy_Type": "Outright_Sale",
+        "Metric_Category": "Opportunity_Cost",
+        "Metric_Name": "Foregone_Portfolio_Growth_Year_5",
+        "Value": "2800000",
+        "Unit": "USD",
+        "Year": "5",
+        "Description": "Cumulative lost compounding over 5 years"
+      },
+      {
+        "Strategy_Type": "Outright_Sale",
+        "Metric_Category": "Opportunity_Cost",
+        "Metric_Name": "Foregone_Portfolio_Growth_Year_10",
+        "Value": "7500000",
+        "Unit": "USD",
+        "Year": "10",
+        "Description": "10-year opportunity cost of selling"
+      },
+      {
+        "Strategy_Type": "Comparison",
+        "Metric_Category": "Value_Creation",
+        "Metric_Name": "SBL_Strategy_Cash_Deployed",
+        "Value": "5000000",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Full $5M available for foundation"
+      },
+      {
+        "Strategy_Type": "Comparison",
+        "Metric_Category": "Value_Creation",
+        "Metric_Name": "Sale_Strategy_Cash_After_Tax",
+        "Value": "3330500",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Only $3.3M net after taxes"
+      },
+      {
+        "Strategy_Type": "Comparison",
+        "Metric_Category": "Value_Creation",
+        "Metric_Name": "Additional_Capital_Preserved",
+        "Value": "1669500",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Value advantage of SBL over sale"
+      },
+      {
+        "Strategy_Type": "Comparison",
+        "Metric_Category": "Value_Creation",
+        "Metric_Name": "Portfolio_Assets_Still_Growing",
+        "Value": "5000000",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Collateral continues earning 9.8% annually"
+      },
+      {
+        "Strategy_Type": "Comparison",
+        "Metric_Category": "Efficiency",
+        "Metric_Name": "SBL_Net_Cost_10_Years",
+        "Value": "2045000",
+        "Unit": "USD",
+        "Year": "10",
+        "Description": "After-tax interest: $204.75K × 10 years"
+      },
+      {
+        "Strategy_Type": "Comparison",
+        "Metric_Category": "Efficiency",
+        "Metric_Name": "Sale_Tax_Plus_Opportunity_Cost",
+        "Value": "9169500",
+        "Unit": "USD",
+        "Year": "10",
+        "Description": "Tax ($1.67M) + Foregone growth ($7.5M)"
+      },
+      {
+        "Strategy_Type": "Comparison",
+        "Metric_Category": "Efficiency",
+        "Metric_Name": "SBL_Advantage_10_Year",
+        "Value": "7124500",
+        "Unit": "USD",
+        "Year": "10",
+        "Description": "Net benefit of credit strategy vs. sale"
+      },
+      {
+        "Strategy_Type": "Comparison",
+        "Metric_Category": "Efficiency",
+        "Metric_Name": "Breakeven_Analysis",
+        "Value": "3.1",
+        "Unit": "Years",
+        "Year": "3",
+        "Description": "Years until SBL outperforms outright sale"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Foundation_Funding",
+        "Metric_Name": "Initial_Foundation_Endowment",
+        "Value": "5000000",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Seed capital via SBL proceeds"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Foundation_Funding",
+        "Metric_Name": "Foundation_Annual_Return_Assumption",
+        "Value": "7.5",
+        "Unit": "Percent",
+        "Year": "0",
+        "Description": "Conservative endowment return target"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Foundation_Funding",
+        "Metric_Name": "Foundation_Year_5_Value",
+        "Value": "6029000",
+        "Unit": "USD",
+        "Year": "5",
+        "Description": "Seed + $70760/yr contribution at 2.5% net (7.5% return minus 5% payout)"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Foundation_Funding",
+        "Metric_Name": "Foundation_Year_10_Value",
+        "Value": "7193000",
+        "Unit": "USD",
+        "Year": "10",
+        "Description": "Seed + $70760/yr contribution at 2.5% net (7.5% return minus 5% payout)"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Foundation_Funding",
+        "Metric_Name": "Cumulative_Grants_Disbursed",
+        "Value": "2500000",
+        "Unit": "USD",
+        "Year": "10",
+        "Description": "Conservative lower bound: seed x 5% payout x 10 years"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Loan_Paydown",
+        "Metric_Name": "Year_6_Partial_Paydown",
+        "Value": "1000000",
+        "Unit": "USD",
+        "Year": "6",
+        "Description": "Reduce principal from portfolio income"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Loan_Paydown",
+        "Metric_Name": "Year_8_Partial_Paydown",
+        "Value": "1500000",
+        "Unit": "USD",
+        "Year": "8",
+        "Description": "Further deleveraging as foundation matures"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Loan_Paydown",
+        "Metric_Name": "Year_10_Final_Payoff",
+        "Value": "2500000",
+        "Unit": "USD",
+        "Year": "10",
+        "Description": "Full loan satisfaction from portfolio gains"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Loan_Paydown",
+        "Metric_Name": "Total_Loan_Repayment_Source",
+        "Value": "Portfolio_Income",
+        "Unit": "Qualitative",
+        "Year": "0",
+        "Description": "No asset sales required for payback"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Banking_Relationship",
+        "Metric_Name": "JPM_Household_Credit_Limit",
+        "Value": "15000000",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Total available credit across all products"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Banking_Relationship",
+        "Metric_Name": "SBL_Utilization_Rate",
+        "Value": "33.3",
+        "Unit": "Percent",
+        "Year": "0",
+        "Description": "Conservative usage of total credit capacity"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Banking_Relationship",
+        "Metric_Name": "Mortgage_Credit_Available",
+        "Value": "5000000",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Additional residential lending capacity"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Banking_Relationship",
+        "Metric_Name": "Unsecured_LOC_Available",
+        "Value": "2000000",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Liquidity backstop for emergencies"
+      },
+      {
+        "Strategy_Type": "SBL_Credit",
+        "Metric_Category": "Banking_Relationship",
+        "Metric_Name": "Total_Banking_Revenue_to_JPM",
+        "Value": "425000",
+        "Unit": "USD",
+        "Year": "1",
+        "Description": "Interest income + wealth management fees"
+      },
+      {
+        "Strategy_Type": "Alternative_Strategy",
+        "Metric_Category": "1031_Exchange_RE",
+        "Metric_Name": "Defer_Capital_Gains_Tax",
+        "Value": "Yes",
+        "Unit": "Boolean",
+        "Year": "0",
+        "Description": "Alternative tax strategy for real estate"
+      },
+      {
+        "Strategy_Type": "Alternative_Strategy",
+        "Metric_Category": "Donor_Advised_Fund",
+        "Metric_Name": "Charitable_Deduction_Upfront",
+        "Value": "5000000",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "DAF allows immediate tax benefit"
+      },
+      {
+        "Strategy_Type": "Alternative_Strategy",
+        "Metric_Category": "Charitable_Remainder_Trust",
+        "Metric_Name": "Income_Stream_to_Client",
+        "Value": "Yes",
+        "Unit": "Boolean",
+        "Year": "0",
+        "Description": "CRT provides income + estate benefits"
+      },
+      {
+        "Strategy_Type": "Alternative_Strategy",
+        "Metric_Category": "Qualified_Small_Business_Stock",
+        "Metric_Name": "Section_1202_Exclusion",
+        "Value": "10000000",
+        "Unit": "USD",
+        "Year": "0",
+        "Description": "Potential QSBS gain exclusion if applicable"
+      }
+    ],
+    "transition_metrics_comparison": [
+      {
+        "Metric_Category": "Portfolio Risk",
+        "Metric_Name": "Portfolio Beta",
+        "Current_Concentrated": "1.35",
+        "JPM_Diversified": "0.88",
+        "Unit": "Ratio",
+        "Change_Direction": "Decrease",
+        "Improvement_Percent": "34.8"
+      },
+      {
+        "Metric_Category": "Portfolio Risk",
+        "Metric_Name": "Value at Risk 95%",
+        "Current_Concentrated": "4250000",
+        "JPM_Diversified": "1875000",
+        "Unit": "USD",
+        "Change_Direction": "Decrease",
+        "Improvement_Percent": "55.9"
+      },
+      {
+        "Metric_Category": "Portfolio Risk",
+        "Metric_Name": "Maximum Drawdown Estimate",
+        "Current_Concentrated": "45.0",
+        "JPM_Diversified": "22.0",
+        "Unit": "Percent",
+        "Change_Direction": "Decrease",
+        "Improvement_Percent": "51.1"
+      },
+      {
+        "Metric_Category": "Portfolio Risk",
+        "Metric_Name": "Concentration Risk Score",
+        "Current_Concentrated": "95",
+        "JPM_Diversified": "15",
+        "Unit": "Index_0_100",
+        "Change_Direction": "Decrease",
+        "Improvement_Percent": "84.2"
+      },
+      {
+        "Metric_Category": "Return Metrics",
+        "Metric_Name": "Expected Annual Return",
+        "Current_Concentrated": "11.7",
+        "JPM_Diversified": "9.8",
+        "Unit": "Percent",
+        "Change_Direction": "Decrease",
+        "Improvement_Percent": "16.2"
+      },
+      {
+        "Metric_Category": "Return Metrics",
+        "Metric_Name": "Risk-Adjusted Return",
+        "Current_Concentrated": "0.38",
+        "JPM_Diversified": "0.68",
+        "Unit": "Sharpe_Ratio",
+        "Change_Direction": "Increase",
+        "Improvement_Percent": "78.9"
+      },
+      {
+        "Metric_Category": "Return Metrics",
+        "Metric_Name": "Downside Deviation",
+        "Current_Concentrated": "22.5",
+        "JPM_Diversified": "11.2",
+        "Unit": "Percent",
+        "Change_Direction": "Decrease",
+        "Improvement_Percent": "50.2"
+      },
+      {
+        "Metric_Category": "Diversification",
+        "Metric_Name": "Number of Holdings",
+        "Current_Concentrated": "8",
+        "JPM_Diversified": "145",
+        "Unit": "Count",
+        "Change_Direction": "Increase",
+        "Improvement_Percent": "1712.5"
+      },
+      {
+        "Metric_Category": "Diversification",
+        "Metric_Name": "Asset Class Count",
+        "Current_Concentrated": "2",
+        "JPM_Diversified": "7",
+        "Unit": "Count",
+        "Change_Direction": "Increase",
+        "Improvement_Percent": "250.0"
+      },
+      {
+        "Metric_Category": "Diversification",
+        "Metric_Name": "Geographic Exposure",
+        "Current_Concentrated": "1",
+        "JPM_Diversified": "4",
+        "Unit": "Regions",
+        "Change_Direction": "Increase",
+        "Improvement_Percent": "300.0"
+      },
+      {
+        "Metric_Category": "Diversification",
+        "Metric_Name": "Correlation to S&P 500",
+        "Current_Concentrated": "0.94",
+        "JPM_Diversified": "0.68",
+        "Unit": "Coefficient",
+        "Change_Direction": "Decrease",
+        "Improvement_Percent": "27.7"
+      },
+      {
+        "Metric_Category": "Tax Considerations",
+        "Metric_Name": "Unrealized Capital Gains",
+        "Current_Concentrated": "18500000",
+        "JPM_Diversified": "0",
+        "Unit": "USD",
+        "Change_Direction": "N/A",
+        "Improvement_Percent": "N/A"
+      },
+      {
+        "Metric_Category": "Tax Considerations",
+        "Metric_Name": "Estimated Tax on Transition",
+        "Current_Concentrated": "4625000",
+        "JPM_Diversified": "0",
+        "Unit": "USD",
+        "Change_Direction": "N/A",
+        "Improvement_Percent": "N/A"
+      },
+      {
+        "Metric_Category": "Tax Considerations",
+        "Metric_Name": "Tax Loss Harvesting Potential",
+        "Current_Concentrated": "0",
+        "JPM_Diversified": "850000",
+        "Unit": "USD",
+        "Change_Direction": "Increase",
+        "Improvement_Percent": "N/A"
+      },
+      {
+        "Metric_Category": "Liquidity",
+        "Metric_Name": "Days to Full Liquidation",
+        "Current_Concentrated": "5",
+        "JPM_Diversified": "90",
+        "Unit": "Days",
+        "Change_Direction": "Increase",
+        "Improvement_Percent": "1700.0"
+      },
+      {
+        "Metric_Category": "Liquidity",
+        "Metric_Name": "Liquid Assets Percentage",
+        "Current_Concentrated": "100",
+        "JPM_Diversified": "70",
+        "Unit": "Percent",
+        "Change_Direction": "Decrease",
+        "Improvement_Percent": "30.0"
+      },
+      {
+        "Metric_Category": "Liquidity",
+        "Metric_Name": "Illiquid Lock-up Capital",
+        "Current_Concentrated": "0",
+        "JPM_Diversified": "5000000",
+        "Unit": "USD",
+        "Change_Direction": "Increase",
+        "Improvement_Percent": "N/A"
+      },
+      {
+        "Metric_Category": "Income Generation",
+        "Metric_Name": "Annual Income Projection",
+        "Current_Concentrated": "112500",
+        "JPM_Diversified": "625000",
+        "Unit": "USD",
+        "Change_Direction": "Increase",
+        "Improvement_Percent": "455.6"
+      },
+      {
+        "Metric_Category": "Income Generation",
+        "Metric_Name": "Dividend Yield",
+        "Current_Concentrated": "0.5",
+        "JPM_Diversified": "2.5",
+        "Unit": "Percent",
+        "Change_Direction": "Increase",
+        "Improvement_Percent": "400.0"
+      },
+      {
+        "Metric_Category": "Estate Planning",
+        "Metric_Name": "Estate Tax Efficiency",
+        "Current_Concentrated": "Low",
+        "JPM_Diversified": "High",
+        "Unit": "Qualitative",
+        "Change_Direction": "Increase",
+        "Improvement_Percent": "N/A"
+      },
+      {
+        "Metric_Category": "Estate Planning",
+        "Metric_Name": "Valuation Discount Potential",
+        "Current_Concentrated": "0",
+        "JPM_Diversified": "15",
+        "Unit": "Percent",
+        "Change_Direction": "Increase",
+        "Improvement_Percent": "N/A"
+      }
+    ],
+    "transition_timeline": [
+      {
+        "Phase": "Discovery",
+        "Month": "1",
+        "Action_Item": "Complete Risk Tolerance Questionnaire",
+        "Responsible_Party": "Private Banker",
+        "Asset_Value_Affected": "25000000",
+        "Tax_Impact": "0",
+        "Status": "Planned",
+        "Priority": "Critical",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Discovery",
+        "Month": "1",
+        "Action_Item": "Review Current Holdings and Cost Basis",
+        "Responsible_Party": "Investment Analyst",
+        "Asset_Value_Affected": "25000000",
+        "Tax_Impact": "0",
+        "Status": "Planned",
+        "Priority": "Critical",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Discovery",
+        "Month": "1",
+        "Action_Item": "Tax Consultation with CPA",
+        "Responsible_Party": "Wealth Planning Specialist",
+        "Asset_Value_Affected": "25000000",
+        "Tax_Impact": "4625000",
+        "Status": "Planned",
+        "Priority": "Critical",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Planning",
+        "Month": "2",
+        "Action_Item": "Develop Customized Investment Policy Statement",
+        "Responsible_Party": "Private Banker",
+        "Asset_Value_Affected": "25000000",
+        "Tax_Impact": "0",
+        "Status": "Planned",
+        "Priority": "Critical",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Planning",
+        "Month": "2",
+        "Action_Item": "Model Alternative Transition Scenarios",
+        "Responsible_Party": "Investment Analyst",
+        "Asset_Value_Affected": "25000000",
+        "Tax_Impact": "0",
+        "Status": "Planned",
+        "Priority": "High",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Planning",
+        "Month": "2",
+        "Action_Item": "Private Equity Fund Selection",
+        "Responsible_Party": "Alternative Investments Specialist",
+        "Asset_Value_Affected": "3000000",
+        "Tax_Impact": "0",
+        "Status": "Planned",
+        "Priority": "High",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Planning",
+        "Month": "3",
+        "Action_Item": "Real Estate Investment Due Diligence",
+        "Responsible_Party": "Real Estate Specialist",
+        "Asset_Value_Affected": "2000000",
+        "Tax_Impact": "0",
+        "Status": "Planned",
+        "Priority": "Medium",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Planning",
+        "Month": "3",
+        "Action_Item": "Fixed Income Portfolio Construction",
+        "Responsible_Party": "Fixed Income Specialist",
+        "Asset_Value_Affected": "8750000",
+        "Tax_Impact": "0",
+        "Status": "Planned",
+        "Priority": "High",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Execution",
+        "Month": "4",
+        "Action_Item": "Systematic Equity Liquidation - Tranche 1",
+        "Responsible_Party": "Trading Desk",
+        "Asset_Value_Affected": "5000000",
+        "Tax_Impact": "1250000",
+        "Status": "Planned",
+        "Priority": "Critical",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Execution",
+        "Month": "4",
+        "Action_Item": "Deploy Cash to Money Market",
+        "Responsible_Party": "Cash Management",
+        "Asset_Value_Affected": "5000000",
+        "Tax_Impact": "0",
+        "Status": "Planned",
+        "Priority": "Medium",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Execution",
+        "Month": "5",
+        "Action_Item": "Systematic Equity Liquidation - Tranche 2",
+        "Responsible_Party": "Trading Desk",
+        "Asset_Value_Affected": "5000000",
+        "Tax_Impact": "1250000",
+        "Status": "Planned",
+        "Priority": "Critical",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Execution",
+        "Month": "5",
+        "Action_Item": "Execute Fixed Income Purchases",
+        "Responsible_Party": "Fixed Income Specialist",
+        "Asset_Value_Affected": "4000000",
+        "Tax_Impact": "0",
+        "Status": "Planned",
+        "Priority": "High",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Execution",
+        "Month": "6",
+        "Action_Item": "Systematic Equity Liquidation - Tranche 3",
+        "Responsible_Party": "Trading Desk",
+        "Asset_Value_Affected": "5000000",
+        "Tax_Impact": "1250000",
+        "Status": "Planned",
+        "Priority": "Critical",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Execution",
+        "Month": "6",
+        "Action_Item": "Deploy to Public Equity Diversification",
+        "Responsible_Party": "Equity Specialist",
+        "Asset_Value_Affected": "9250000",
+        "Tax_Impact": "0",
+        "Status": "Planned",
+        "Priority": "High",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Execution",
+        "Month": "7",
+        "Action_Item": "Systematic Equity Liquidation - Tranche 4",
+        "Responsible_Party": "Trading Desk",
+        "Asset_Value_Affected": "5000000",
+        "Tax_Impact": "1250000",
+        "Status": "Planned",
+        "Priority": "Critical",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Execution",
+        "Month": "7",
+        "Action_Item": "Complete Fixed Income Allocation",
+        "Responsible_Party": "Fixed Income Specialist",
+        "Asset_Value_Affected": "4750000",
+        "Tax_Impact": "0",
+        "Status": "Planned",
+        "Priority": "High",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Execution",
+        "Month": "8",
+        "Action_Item": "Final Equity Liquidation - Tranche 5",
+        "Responsible_Party": "Trading Desk",
+        "Asset_Value_Affected": "2500000",
+        "Tax_Impact": "625000",
+        "Status": "Planned",
+        "Priority": "Critical",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Execution",
+        "Month": "9",
+        "Action_Item": "Private Equity Capital Calls - Initial",
+        "Responsible_Party": "Alternative Investments Specialist",
+        "Asset_Value_Affected": "1500000",
+        "Tax_Impact": "0",
+        "Status": "Planned",
+        "Priority": "Medium",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Execution",
+        "Month": "10",
+        "Action_Item": "Real Estate Investment Deployment",
+        "Responsible_Party": "Real Estate Specialist",
+        "Asset_Value_Affected": "2000000",
+        "Tax_Impact": "0",
+        "Status": "Planned",
+        "Priority": "Medium",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Execution",
+        "Month": "11",
+        "Action_Item": "Private Equity Capital Calls - Additional",
+        "Responsible_Party": "Alternative Investments Specialist",
+        "Asset_Value_Affected": "1500000",
+        "Tax_Impact": "0",
+        "Status": "Planned",
+        "Priority": "Medium",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Monitoring",
+        "Month": "12",
+        "Action_Item": "Portfolio Rebalancing Review",
+        "Responsible_Party": "Private Banker",
+        "Asset_Value_Affected": "25000000",
+        "Tax_Impact": "0",
+        "Status": "Planned",
+        "Priority": "Medium",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Monitoring",
+        "Month": "12",
+        "Action_Item": "Tax Loss Harvesting Opportunities",
+        "Responsible_Party": "Wealth Planning Specialist",
+        "Asset_Value_Affected": "25000000",
+        "Tax_Impact": "-850000",
+        "Status": "Planned",
+        "Priority": "High",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Monitoring",
+        "Month": "15",
+        "Action_Item": "Quarterly Performance Review",
+        "Responsible_Party": "Private Banker",
+        "Asset_Value_Affected": "25000000",
+        "Tax_Impact": "0",
+        "Status": "Planned",
+        "Priority": "Medium",
+        "Completion_Percent": "0"
+      },
+      {
+        "Phase": "Monitoring",
+        "Month": "18",
+        "Action_Item": "Semi-Annual Risk Assessment",
+        "Responsible_Party": "Investment Analyst",
+        "Asset_Value_Affected": "25000000",
+        "Tax_Impact": "0",
+        "Status": "Planned",
+        "Priority": "Medium",
+        "Completion_Percent": "0"
+      }
+    ]
+  }
+}
