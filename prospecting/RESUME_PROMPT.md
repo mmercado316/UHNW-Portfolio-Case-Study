@@ -4,11 +4,11 @@ Copy everything below the dashed line into a fresh session opened at `/Users/Mar
 
 ---
 
-I'm continuing a multi-session project to produce a UHNW prospecting case study ("The Client Book") that will publish on mario-mercado.com. The previous session locked the substance through Prospect 1; we still need Prospects 2 and 3, then a light revision pass on the strategic memo / opening / closing, then a fresh full draft of the deliverable, then site integration and Vercel deployment.
+I'm continuing a multi-session project to produce a UHNW prospecting case study ("The Client Book") that will publish on mario-mercado.com. The prior session locked the substance through all three prospects. Prospects 1, 2, and 3 are now fully drafted in the working memory. Prospects 2 and 3 are pending my revision notes (Prospect 1 was locked in an earlier session). After revisions, the sequence moves to a light revision pass on strategic memo / opening / closing, then a fresh full draft of the deliverable, then site integration and Vercel deployment.
 
 **Before responding, read these files in order:**
 
-1. `/Users/Mario/jpmproject/prospecting/working_memory_v2.md` — the comprehensive locked-substance document. This is your source of truth: frame decisions, voice constraints, three-layer architecture, full 14-category Layer 1 schema with ~150 fields and if/thens, Layer 2 decision-log structure, Layer 3 COI ledger and pattern map structures, the inference layer (5 rules + 3 discovery answers), Prospect 1 fully populated, signal sets and outreach plays already locked for Prospects 2 and 3, strategic memo revision notes, consolidated Notes & Sources.
+1. `/Users/Mario/jpmproject/prospecting/working_memory_v2.md` — the comprehensive locked-substance document. This is your source of truth: frame decisions, voice constraints, three-layer architecture, full 14-category Layer 1 schema with ~150 fields and if/thens, Layer 2 decision-log structure, Layer 3 COI ledger and pattern map structures, the inference layer (5 rules + 3 discovery answers), all three prospect profiles (each now opening with a **Relationship stage** block that names where we are in the sequence), strategic memo revision notes, consolidated Notes & Sources.
 2. `/Users/Mario/jpmproject/prospecting/memory.md` — original pre-flight context (audience, stakes, definition of done, definition of wrong).
 3. `/Users/Mario/.claude/CLAUDE.md` — Mario's voice and style guide. Critical for the writing.
 4. `/Users/Mario/jpmproject/prospecting/ai-augmented-uhnw-prospecting.mdx` — the v1 deliverable. Treat as scaffolding only (~30-40% reusable). Do not edit unless I say so.
@@ -24,11 +24,15 @@ I'm continuing a multi-session project to produce a UHNW prospecting case study 
 - **Length is not the constraint.** The deliverable will render as discrete sections on the Vercel site. Optimize for content correctness, not single-document word count.
 - **Voice:** practicing senior UHNW private banker. Active voice. No hedging on data-backed claims.
 
-**Immediate next step:** Draft **Prospect 2** in full, in the same structural format as Prospect 1 in the working memory. The archetype, key signal sets, multi-jurisdictional family details, and a sketched outreach play are already locked in the "Prospects 2 & 3 — pending" section of the working memory. Use that as the source; populate all 14 Layer 1 categories with compact prose paragraphs (one paragraph per category, not field-by-field bullet lists), then add a Layer 2 decision-log excerpt (3-5 entries), a Layer 3 pattern match (primary match + anti-pattern), and a complete outreach play (channel, who introduces, opening angle, timing, second-meeting artifact, non-obvious signal).
+**Current state of each prospect (each section opens with a Relationship stage block):**
 
-After Prospect 2, ask me whether to continue directly to Prospect 3 in the same response, or to break for review.
+- **Prospect 1** (exited tech founder, mid-career, post-acquisition). Post-second-meeting; third meeting scheduled 2025-05-05 at prospect's invitation with spouse present. Locked.
+- **Prospect 2** (foreign-born first-gen operator, French-Lebanese, multi-jurisdictional family business). Post-second-meeting; third meeting requested by prospect with spouse present; target window late April through early June 2026. Drafted, pending my revision notes.
+- **Prospect 3** (next-gen wealth recipient, Turkish-American, inherited Bay Area tech wealth). Post-first-meeting; second-meeting target mid-April through late May 2026, with a written pre-read framing a 90-day scoped second opinion on the dormant DAF and the 2030 bypass trust sunset. Drafted, pending my revision notes.
 
-**Sequence after Prospects 2 and 3 are locked** (don't proceed without confirming with me at each gate):
+**Immediate next step:** Confirm you've read `working_memory_v2.md` and understood the constraints, then wait for my revision notes on Prospects 2 and 3. Do not re-draft either prospect without my notes. Do not proceed to the strategic memo / opening / closing revision sequence until I explicitly confirm both profiles are locked.
+
+**Sequence after Prospects 2 and 3 are locked** (don't proceed without confirming at each gate):
 1. Strategic memo light revision (compress AI subsections; fold in 67%-of-affluent-prospects-knew-someone data point).
 2. Opening narrative light revision.
 3. Closing questions light revision.
@@ -39,4 +43,6 @@ After Prospect 2, ask me whether to continue directly to Prospect 3 in the same 
 8. Site integration: locate the Next.js repo for mario-mercado.com (not on this machine; user will provide), reconcile frontmatter against existing project mdx files, drop the new file into the content/projects/ directory, add the project card entry to the homepage enumeration.
 9. Vercel deployment via git push.
 
-Confirm you've read the working memory file and understand the constraints before generating Prospect 2. Then proceed.
+**Git state:** The working memory and all three prospect profiles are committed and pushed to `main` on the UHNW-Portfolio-Case-Study repo. The new session starts from a clean git state.
+
+Confirm you've read the working memory file and understand the constraints. Then wait for revision notes.
