@@ -11,17 +11,18 @@ We are in the **substance-locking phase** before drafting the final deliverable.
 **Locked:**
 - Frame (bespoke Client Book; AI-augmented in build but not body headline; not a JPM playbook)
 - Naming convention (Prospect 1/2/3; Existing Client 1/2/etc; COI 1/2/etc)
-- Three-layer Book architecture (Profile / Decision Log / Relational Graph)
+- Three-layer Prospect File architecture (Profile / Decision Log / Relational Graph)
 - 14-category Layer 1 schema with ~150 fields and if/thens
 - Layer 2 Decision Log structure (6 entry types) with worked example
 - Layer 3 Relational Graph (COI Ledger + Pattern Map) with worked example
 - Inference Layer (5 rules + 3 discovery answers) with worked example
-- Prospect 1 fully populated
-- Prospect 2 fully populated (drafted, pending user revision notes)
-- Prospect 3 fully populated (drafted, pending user revision notes)
+- Prospect 1 fully populated (drafted, pending user revision notes; post-M2)
+- Prospect 2 fully populated (drafted, pending user revision notes; post-M2)
+- Prospect 3 fully populated (drafted, pending user revision notes; post-M1)
+- Prospect 4 fully populated (drafted, pending user revision notes; pre-M1, qualification stage)
 
 **Pending, in order:**
-1. Incorporate user revision notes on Prospects 2 and 3
+1. Incorporate user revision notes on Prospects 1, 2, 3, and 4
 2. Strategic memo light revision (compress AI subsections, fold in 67%-of-affluent-prospects-knew-someone data point, keep tight)
 3. Opening narrative light revision (probably survives mostly intact)
 4. Closing questions light revision
@@ -31,6 +32,8 @@ We are in the **substance-locking phase** before drafting the final deliverable.
 8. Full fresh draft of deliverable (treat existing v1 mdx as scaffolding only, ~30–40% reusable)
 9. Site integration (locate Next.js repo, reconcile frontmatter, drop into content/projects/)
 10. Vercel deployment
+
+**Prospect profiles:** live in `prospects/prospect_1.md`, `prospects/prospect_2.md`, `prospects/prospect_3.md`, `prospects/prospect_4.md`. The four are staggered across the BD funnel: Prospect 4 (qualification, pre-M1) → Prospect 3 (first-touch, post-M1) → Prospects 1 and 2 (post-M2 depth, two cultural contexts). See README.md for the full file map.
 
 ---
 
@@ -70,7 +73,7 @@ Most senior associates and VPs at UHNW advisory firms boil the ocean with templa
 
 ## FRAME DECISIONS (locked through conversation)
 
-1. **The piece is a Client Book case study, NOT a JPM prospecting curriculum.** Every research finding from the operational craft pass (Prince/Allison/Oechsli/Bowen/etc.) lands as "this is what the Book captures" or "this is the decision the Book drives," NOT as top-down methodology.
+1. **The piece is a Client Book case study, NOT a JPM prospecting curriculum.** Every research finding from the operational craft pass (Prince/Allison/Oechsli/Bowen/etc.) lands as "this is what the Prospect File captures" or "this is the decision the Prospect File drives," NOT as top-down methodology.
 
 2. **AI is the build substrate (in title), not the body's headline.** "AI-Augmented" stays in the title because it honestly describes how the playbook was built. The strategic memo compresses AI to one ~80-word paragraph at the end. Banker craft is the body's center of gravity.
 
@@ -92,7 +95,7 @@ Most senior associates and VPs at UHNW advisory firms boil the ocean with templa
 
 **Layer 3: Relational Graph** — COI Ledger (one record per intro source, used across many prospects) + Pattern Map (per prospect, links to Existing Clients with similar signal sets). The connective tissue.
 
-A prospect file pulls from all three layers. The COI ledger is shared across prospects. Pattern-match references cross-link to handled clients.
+A Prospect File pulls from all three layers. The COI ledger is shared across prospects. Pattern-match references cross-link to handled clients.
 
 ---
 
@@ -288,7 +291,7 @@ Feeds Layer 3 (COI ledger). Captures relational ecosystem.
 - **Stated views on advisors as a class** [DD]. *Calibrate framing accordingly; a prospect who says "they're all the same" needs the meeting to feel different in form, not just in claim.*
 - **Active intro-source ledger references** [REF]. Cross-references Layer 3 COI Ledger.
 - **Decision-making style for advisor selection** [DD]. Single meeting, multi-meeting, requires references, requires team meeting, requires spouse approval, requires sample work. *Selection process is rehearsal of working relationship.*
-- **Stated criteria for engaging a new or additional advisor** [DD]. *Most prospects do not voice this directly but signal it across meetings. Book records inferred criteria; next material proposal addresses them explicitly.*
+- **Stated criteria for engaging a new or additional advisor** [DD]. *Most prospects do not voice this directly but signal it across meetings. The Prospect File records inferred criteria; next material proposal addresses them explicitly.*
 
 ### Cat 12 — Conversational signals and behavioral notes
 
@@ -320,7 +323,7 @@ Highest discretion. Empty by default. Captured only as prospect volunteers, neve
 - **Stated planning fears** [DD]. *Voiced fear IS the opener. Offer specific structural answer in next material outreach, not sympathetic ear.*
 - **Stated regrets and "would do differently"** [DD]. *Voiced regret is diagnostic for unmet planning needs.*
 - **Family rifts and estrangements as volunteered** [DD]. *If child cut contact, sibling no longer spoken to, former co-founder excised from narrative — do not solve for the wound, route around it.*
-- **Past legal or regulatory matters as volunteered** [REF/DD]. *Material when bearing on fiduciary planning. Book holds the fact; planning conversation respects without surfacing.*
+- **Past legal or regulatory matters as volunteered** [REF/DD]. *Material when bearing on fiduciary planning. The Prospect File holds the fact; planning conversation respects without surfacing.*
 - **Identity transitions as volunteered** [REF/DD]. Gender, religious conversion, naturalization in process, marital identity changes. *Material only when bearing on documents.*
 - **Known fiduciary appointments tied to health** [REF]
 
@@ -334,7 +337,7 @@ The WHEN of outreach. Calendar overlay across every other category. Most operati
 - **Liturgical and observance calendar windows** [DD]. High holy days, Ramadan, Lent, Lunar New Year, Diwali, Holi, Vesak. Cross-references Cat 6. *No substantive outreach during observance windows.*
 - **Known travel windows** [REF]
 - **Known seasonal residence patterns** [REF]
-- **Last touch and next scheduled touch** [DD]. *If next touch slips past prospect's stated comfort window, relationship cools without notice. Book prompts touches at prospect's natural rhythm.*
+- **Last touch and next scheduled touch** [DD]. *If next touch slips past prospect's stated comfort window, relationship cools without notice. The Prospect File prompts touches at prospect's natural rhythm.*
 
 ---
 
@@ -351,14 +354,7 @@ Per prospect, dated chronological journal. Six entry types:
 
 Each entry holds: date, type, trigger, content, Layer 1 cross-references (which fields informed or were updated), Layer 3 cross-references (which COIs or pattern matches involved), author.
 
-**Worked example for Prospect 1:**
-
-- *2025-03-12. Inference drawn.* Trigger: first meeting (intro via COI 4). Mentioned mother twice unprompted; co-founder zero times; named high school in country of origin before naming Berkeley. Inference: family weight exceeds founder weight; co-founder omission reads as wound, not oversight; identity is heritage-first. Updates Cat 12 and Cat 6.
-- *2025-03-14. Move considered.* Three options: (a) email memo on lockup tax sequencing — rejected, leads with founder identity; (b) dinner via mutual school parent — rejected, declines unknown-group dinners (Cat 9); (c) warm intro request to estate counsel for generational-trust conversation including mother's long-term care — selected, routes through heaviest signal.
-- *2025-03-15. Move taken.* Requested warm intro from COI 4 to specialty estate counsel COI 7 for 7am Stanford Dish run with prospect. Opening framing: structural question about generational trust accommodating mother's long-term care, not a pitch.
-- *2025-04-02. Outcome.* Run accepted. Conversation routed through father's retirement (volunteered by prospect within first ten minutes). Founder biography never raised. Prospect requested follow-up with spouse present; volunteered that spouse's parents also live in market without long-term-care planning. Updates Cat 2 and Cat 14.
-- *2025-04-02. Question to surface.* Spouse's financial agency. Spouse's view on long-term-care timing. Whether brother-in-law involved in in-laws' planning. To surface in next meeting if naturally arising.
-- *2025-04-02. Pattern match flag.* Prospect 1's signal set matches Existing Client 1. Update Layer 3 pattern map.
+**Worked example:** see `prospects/prospect_1.md` for the full Layer 2 decision log on Prospect 1.
 
 ---
 
@@ -368,7 +364,7 @@ Two sub-tables.
 
 ### COI Ledger
 
-One record per Center of Influence, used across many prospects.
+One record per Center of Influence the banker directly knows, used across many prospects within the banker's own book.
 
 Per-COI fields:
 - **Identity** [REF]. Name, role, firm type.
@@ -388,22 +384,19 @@ Outside counsel, Bay Area corporate law firm, senior partner, M&A + emerging-com
 
 ### Pattern Map
 
-Per prospect. Flags 1-3 Existing Clients whose signal set this prospect resembles.
+Per prospect. Flags 1-3 Existing Clients whose signal set this prospect resembles. Pattern matches are drawn only from the banker's own directly-served clients; client information protected by firm confidentiality policy and regulatory privacy frameworks stays within the trust boundary that earned it. The Pattern Map reflects the banker's own book, not a firm-wide client database.
 
 - **Pattern match #1** [DD]. Existing Client. Match type. What worked. What failed. What to carry forward. What to avoid.
 - **Pattern match #2** [DD]. Same structure if exists.
 - **Anti-pattern** [DD]. Existing Client whose situation looked similar but played out differently. What looked like a match but wasn't. Why the move that worked there will not work here.
 
-**Worked example for Prospect 1:**
-- *Match #1.* Existing Client 1. Match: post-acquisition founder, family-first identity, observant household, declined dinners (3 of 3 early), mentioned mother before company in first three meetings. Worked: morning-run venue picked by intro source; opening question about father's estate; six-month gap before any product mention; spouse included in second meeting at her invitation. Failed: early wine-dinner proposal; late sector-conference invitation. Carry forward: route first material outreach through estate counsel; let second meeting be requested by prospect; never mention co-founder by name. Avoid: speed; framing founder identity as primary.
-- *Match #2.* None close enough at this stage.
-- *Anti-pattern.* Existing Client 5. Surface match (post-acquisition Bay Area founder, observant household) but G2 inheritor of operating company, not self-built founder. Family-first frame already saturated by existing multi-generational family office. Lesson: family-first identity is not enough; verify whether sits on Built or Inherited wealth before applying play.
+**Worked example:** see `prospects/prospect_1.md` for the Pattern Map on Prospect 1.
 
 ---
 
 ## INFERENCE LAYER
 
-The mental model for turning Layer 1 + Layer 2 + Layer 3 data into a specific outreach move. Without this layer, the Book is a data dictionary; with it, the Book is a decision engine.
+The mental model for turning Layer 1 + Layer 2 + Layer 3 data into a specific outreach move. Without this layer, the Prospect File is a data dictionary; with it, the Prospect File is a decision engine.
 
 ### Five rules for reading the file
 
@@ -423,170 +416,7 @@ Three highest-yield early-meeting questions:
 Once all three are in Cat 12, outreach thesis is close to determined. Until all three captured, outreach is tentative; once captured, outreach is decisive.
 
 ### Worked example for Prospect 1
-(See Layer 2 decision log above plus the inference application: load-bearing signals are family weight and heritage identity; co-founder absence is structural; no contradictions; family is heaviest; Layer 3 points to Existing Client 1 play; outreach decision is warm intro through COI 4 to estate counsel COI 7 for 7am Stanford Dish run, opening on generational trust accommodating mother's long-term care.)
-
----
-
-## PROSPECT 1 — fully populated
-
-### Relationship stage
-Post-second-meeting. Two seated conversations complete: first meeting 2025-03-12 (intro via COI 4) and 2025-04-02 Stanford Dish run with estate counsel COI 7. Third meeting scheduled 2025-05-05 as breakfast with spouse Priya present, at the prospect's own invitation; spouse inclusion at prospect-initiated scheduling is the key progression marker.
-
-### Archetype
-Exited tech founder, mid-career, post-acquisition.
-
-### Layer 1 highlights
-- 43, US citizen (naturalized 2005) + India OCI; languages English/Hindi/limited Marathi.
-- Hindu, moderately observant; Diwali and Holi as family events.
-- Menlo Park primary residence (joint tenancy, personal name); no secondary; CA tax domicile.
-- First marriage 2012, no prenup. Spouse Priya, 41, 2nd-gen Indian-American, MBA, former product lead, full-time parent; joint financial agency, passive on investments.
-- Two sons, 12 and 9, Mandarin-immersion school in Palo Alto.
-- Parents (retired physicians) in Cupertino since 2019 (after father's cardiac event); modest monthly support from prospect.
-- One sister in London (independent).
-- Berkeley CS 2004; private Indian boarding high school in Pune.
-- G1 wealth creator. Single founder of vertical SaaS company 2014–2025; sold to publicly traded acquirer Jan 2025; $180M cash-and-stock, 40% rolled into acquirer stock under 24-month lockup (releases Sept 2026 + Mar 2027).
-- ~60/40 liquid/illiquid; 35% concentration in lockup stock.
-- Existing structures: revocable living trust 2018; NO dynasty/GRAT/CRT/DAF/foundation. QSBS claimed for own shares but NOT stacked across spouse or trusts (gap). Single wirehouse advisor since 2020 + single firm-based CPA. $10M term life; no PPLI/LTC. NO SBL line (opportunity).
-- Career arc: "I built one thing." Two private boards (early-stage portfolio companies). YPO joined 2024. One long-form essay on operator mental health (2024).
-- First-gen immigrant from Maharashtra (came 2000 for college). Travels India once yearly February for ~2 weeks.
-- Vegetarian (Hindu); has suggested Ettan in Palo Alto twice; light Burgundy occasionally; tea drinker.
-- Runs 5–6x/week, Stanford Dish or Rinconada. Follows IPL cricket. Hikes with kids. Tahoe ski weekends. Goa summer 2023.
-- Reserved, analytical, skeptical, detail-oriented, deliberative. Dry humor at second meeting. Email primary; 24–48h response; direct calendar; prefers 6:30–9:30am; 60 min standard. Five Ps inferred: People > Philosophy > Process > Fees > Performance. Media: Economist, Stratechery, NYT.
-- Causes: Berkeley CS (modest), children's school, Bay Area mental-health crisis hotline since 2022. DAF at wirehouse 2020; ~$250K/yr; Priya co-advises.
-- Olympic Club 2023 (rare use). Active in Pune high school WhatsApp group. Prior advisor relationship maintained but stated dissatisfaction. Multi-meeting decision style; requires spouse approval.
-- Volunteers mother's care, father's cardiac event, sons' Indian-American identity, sister's career. Avoids prior advisor's name. Returns to parents' late-life transition. Names: mother as "Mom," father as "Dad," sister by first name. Slow methodical pacing. Boundary: "I want one person I trust." Field Notes notebook. 10-year-to-generational time horizon. Risk posture: "conservative, because I got lucky once and I don't want to be lucky twice." Discovery captured: values (family continuity); three-year question NOT yet surfaced; prior-advisor diagnostic ("fine but never proactive").
-- Sensitive: light ADD mention. Father's cardiac event 2019 (2 stents); mother's breast cancer remission 2015. Therapy normalized. Planning fear: "I don't want my parents to need something I haven't thought of." Regret: wishes had set up trust for parents pre-exit. Priya healthcare proxy; no living will (gap).
-- Trigger events: lockup tranche 1 release Sept 2026; tranche 2 Mar 2027; father's 75th birthday Jan 2026; 13-year wedding anniversary Sept 2025. DOB 1982-06-04. Recent transitions: parents' move (2019), father's cardiac event (2019), exit (Jan 2025). Liturgical: Diwali (Nov), Holi (Mar). Travel: India 2 weeks Feb. Last touch 2025-04-02; next 2025-05-05 (breakfast w/ spouse, requested by prospect).
-
-### Outreach play
-- **Channel.** Warm intro via COI 4 (former outside counsel on the acquisition; intro to banker via M&A panel 2022; warm temperature).
-- **Who introduces.** COI 4 by email with one-sentence context paragraph banker drafts.
-- **Opening angle.** Structural memo on how Sept 2026 lockup release interacts with a generational trust accommodating mother's long-term care. Routes through heaviest signal (family) and addresses voiced planning fear.
-- **Timing.** Early Q3 2025, ~6 months pre-lockup. Avoids Diwali (Nov) and India trip (Feb 2026).
-- **Second-meeting artifact.** Two-page structure memo with QSBS stacking gap surfaced (diagnostic, not pitched) and trust architecture covering parents, spouse, sons.
-- **Non-obvious signal that drove decision.** Heritage biography and mother's care lead every meeting. Routing through parents' estate, not exit proceeds, is the only opener that survives Rule 4.
-
----
-
-## PROSPECT 2 — fully populated
-
-### Relationship stage
-Post-second-meeting. First meeting 2025-02-18 (intro via COI 9 at the French-American school finance committee room) and second meeting 2025-03-20 at her selected Sand Hill Road cafe. The second meeting produced a revision request on the English-side pre-read ("tighter, same substance"), a volunteered seven-figure tax-friction regret from the 2023 secondary sale, and a request for a third meeting with spouse Tarek present. No third meeting scheduled; target window is post-Orthodox-Easter 2026, pre-summer-travel (late April through early June 2026).
-
-### Archetype
-Foreign-born first-gen operator, mid-career, post-secondary-sale, with a multi-jurisdictional family-business lineage in parallel to her built US exit.
-
-### Layer 1 highlights
-
-**Cat 1 — Core identity and residences.** Prospect 2 is 51, born Paris to Lebanese parents who fled civil-war-era Beirut in the late 1970s. French citizen by birth, naturalized US citizen in 2018; both passports active and used within the last twelve months. Primary residence Atherton (2019 purchase, personal name, joint tenancy with spouse). Secondary residence Paris 7th arrondissement (family-owned since 1982, held through a French SCI). Ancestral stone house in Byblos inherited through the paternal line. California tax domicile since 2019 with clean substantiation (driver's license, voter registration, primary physician all in CA); the Paris property routes through the SCI for French wealth-tax and succession purposes. Written outreach uses the French form of her given name; a legal-form salutation will read as database-pulled. Chief of staff (one-year tenure) controls the calendar and email triage end-to-end and is a first-class relationship in her own right.
-
-**Cat 2 — Family, multi-generational.** Married fifteen years to Tarek, 54, French-Lebanese architect running a small Bay Area residential practice. Joint financial agency, with Tarek carrying emotional weight on family-continuity decisions and Prospect 2 leading on structural ones. Three children: eldest at Sciences Po Paris (19, gap year before final cycle), middle and youngest (17 and 14) at the French-American school in Menlo Park. Mother (76) splits her year between the Paris apartment and Byblos and co-runs the family jewelry business from a Place Vendôme-adjacent atelier with the older sister (53, Paris-based, day-to-day operator). Younger sister (47) in Dubai, financially independent. Father died 2013; his post-war Lebanese civic involvement is a topic Prospect 2 sidesteps. No prenup on the current marriage; both spouses entered the marriage with inherited European property. Children's schooling anchors the household to French school-year rhythm.
-
-**Cat 3 — Education, across generations.** Prospect 2: Lycée Janson de Sailly (Paris, 1993), HEC Paris bachelor-master (1999), Harvard Kennedy MPP (2002). Spouse: Ecole des Beaux-Arts and a Harvard GSD master's. Older sister: ESCP Paris. HEC and HKS alumni networks are active and well-stewarded; she attends the HEC SF alumni chapter dinner at least annually. Eldest child's Sciences Po cohort and the French-American school development office are both viable warm-intro surfaces. Giving history to HKS is modest but steady; HEC participation is social, not financial.
-
-**Cat 4 — Wealth story.** Co-founded a fintech infrastructure company in 2011 (cross-border B2B payments rails). Held 22% at the 2023 secondary sale, when a growth-stage private equity buyer took a majority stake: ~$95M cash out plus ~$40M rolled into the acquirer's continuation vehicle with a three-year lock and a ratchet. Concurrent inheritance of a one-third economic interest in the Paris-based family jewelry business (closely held European private company, minority stake governed by a French-law shareholder agreement). Net worth tier $150–200M liquid plus the European minority. Liquid/illiquid split roughly 55/45. Single-position concentration in the acquirer rollover sits at 21% of liquid; tolerable, not urgent. Existing structures: a French notarial will and a *mandat à effet posthume* governing the jewelry stake; a US revocable living trust from 2020; no dynasty trust, no GRAT, no CRT, no DAF, no foundation in her own name. QSBS is not a gap because the 2011 vehicle was not C-corp. Multi-advisor structure: US wirehouse managing the 2023 proceeds, a French private bank on Paris-side assets, two tax advisors (one each side), and a Paris notary for European succession. No quarterback across the four. No SBL line; $3M mortgage on Atherton at 2.9% fixed. Current income streams: two private-company board fees plus continuation-vehicle distributions, not operating salary.
-
-**Cat 5 — Professional history and boards.** Pre-founding: four years in corporate strategy at a European bank (Paris and New York), then two years at a US venture firm as EIR before spinning out the 2011 company. Post-exit she sits on two private-company boards (both acquirer portfolio companies) and on the board of the family jewelry business in Paris (formal seat since 2017). One non-profit board: a binational French-American cultural foundation chaired from San Francisco. Career narrative in her own words: "I was raised in two family businesses. Fintech was the first one I built myself; the second is older than I am." Publishes occasional op-eds in a Paris business weekly on cross-border payments regulation and speaks at one European fintech conference annually. No LinkedIn activity; the op-ed byline is her operative public surface. Fellow directors on the cultural foundation and the family-business board are the highest-yield warm-intro routes.
-
-**Cat 6 — Cultural origin and orientation.** First-generation immigrant to the US from a first-generation immigrant French family; fully second-generation in France. Identifies as Lebanese first, French second, Californian third. Trilingual: French is the working and family language; Arabic is the language of emotional content and of how she addresses her mother; English is for structured negotiation and written memos. Greek Orthodox by paternal lineage, observes Easter and Christmas on the Julian calendar (Orthodox Easter falls April or May; Christmas January 7). Loose acknowledgment of Ramadan through maternal cousins, not personally observant. She traveled to Byblos every summer of her life except 2020; the 2020 Beirut port explosion damaged the family atelier in old Beirut and is a loaded topic she raises unprompted. Family decision-making reads Collective Harmony: nothing commits until mother and older sister have weighed in, even where she holds formal control.
-
-**Cat 7 — Food, beverage, dietary.** No dietary restrictions. Pescatarian Wednesdays (Greek Orthodox fast-day observance that survives even when the rest of the calendar drifts). Selected a specific Sand Hill Road cafe for two of the first three meetings; treat as her venue of record until she selects another. Cuisine preferences: Levantine home cooking (she references her mother's kibbe nayeh repeatedly), French bistro, Japanese at the kaiseki level. Wine: light Burgundy and Lebanese reds from the Bekaa; twice referenced a specific Lebanese producer by name. Tea drinker by 11am; espresso before 10am. Social drinker, not oenophile; one glass, never two. Declines cocktail-hour venues in favor of lunch or midmorning coffee.
-
-**Cat 8 — Sports, fitness, hobbies, travel.** Daily swimmer at a masters pool near home, 6:15am. Does not run. Plays weekly doubles tennis at Menlo Country Club level with Tarek in season. No season tickets to any US team; follows Paris Saint-Germain loosely. Hobbies: mid-century French design, an inherited collection of Ottoman-era silver jewelry pieces from the family workshop, a modest photography habit focused on Mediterranean coastal architecture. Travel rhythm: Paris and Byblos each summer (mid-June through late August), Paris at Orthodox Christmas (around January 7), Paris at Orthodox Easter. One or two US domestic trips per year, rarely to New York. No private aviation; flies commercial first class. Cultural consumption: Paris Opera season tickets, San Francisco Symphony subscriber.
-
-**Cat 9 — Personality and communication.** Reserved and analytical. High skepticism of American advisor-pitch culture; she reads firm-branded conference rooms as hostile terrain and has walked out of one. Detail-oriented and deliberative; expects materials 24 hours in advance and returns them marked up. Decisive only after at least two seated meetings and a written memo in hand. Preferred channel: email first, phone second; never text. Response-time norm is two to four business days. Calendar is gatekept tightly by the chief of staff. Prefers late-morning meetings (10–11:30am), 75 to 90 minutes, at her selected cafe or the cultural foundation's office; never at the advisor's office, never at her home. Five Ps rank ordering: Philosophy > People > Process > Fees > Performance. Performance-lead pitches slide off her. Media diet: Les Echos, the Financial Times, one Lebanese-diaspora Substack, and the family-business weekly that runs her op-eds.
-
-**Cat 10 — Philanthropy.** No DAF, no private foundation in her own name (the family jewelry business runs a small European operating foundation in which she holds a director seat). US giving is direct-check, modest ($50–150K annually), to two institutions: the binational French-American cultural foundation she chairs, and an organization funding heritage-craft apprenticeships in Lebanon stood up after the 2020 explosion. Chairing the cultural foundation makes that board's other directors high-yield COIs; most are practicing principals in Bay Area design, finance, and law. The post-explosion Lebanon giving is tied to identity work, not portfolio work; substantive content on heritage-craft continuity will land where a structured-giving pitch will not.
-
-**Cat 11 — Network, memberships, centers of influence.** No Bay Area city-club membership (declined Olympic Club and Pacific Union; treats US city clubs as performative). Holds an inherited membership at Cercle de l'Union Interalliée in Paris, rarely used. Close friends referenced by first name across meetings: two HEC classmates based in Paris (not in-market), one architect spouse-circle friend in Menlo Park, and one Bay Area fintech co-founder (her only US-based peer-network anchor). Chief of staff controls introduction routing; a request that bypasses the chief of staff closes the door. Active intro-source candidates: COI 9 (school finance committee chair at the French-American school, fellow committee member for two years, warm), COI 12 (fellow director on the cultural foundation, senior Bay Area design principal, warm), COI 14 (Paris estate counsel who served the family jewelry business in a 2019 succession planning cycle, warm but Paris-based, used asymmetrically). Two prior US advisors over nine years; neither terminated on fee or performance. Both relationships lapsed on what she describes as "they stopped knowing what was going on at home." First material proposal must address the cross-border coordination gap head-on.
-
-**Cat 12 — Conversational signals and behavioral notes.** Topics volunteered unprompted: the family jewelry business (she calls it "the project" in Arabic when speaking to her mother and occasionally lets the Arabic slip in English), the 2020 Beirut explosion and its effect on the atelier, the middle child's academic difficulty switching between English and French, and her mother's insistence on remaining in Byblos through summer regardless of security conditions. Topics avoided: her father's post-war political involvement (referred to obliquely, never directly), US equity-market performance (treated as other people's conversation), and any framing that centers her fintech exit as her primary achievement. Topics returned to repeatedly: cross-border succession of the jewelry business, the middle child's schooling path, and the risk of the Paris apartment aging out of family use across the next generation. Names: mother by a French-Arabic hybrid term in private, older sister by first name, younger sister by first name, late father never named. Pacing: slow, measured, often 10 to 15 seconds of reflective silence before answering a planning question. Boundary voiced: "I do not take phone calls during the children's school pickup." Discovery answers captured so far: values question ("continuity of the family's name and craft; the money is instrumental"), three-year question ("the jewelry business and the Atherton household function without my daily attention; both children in US high school settled in their bilingual identity"), prior-advisor diagnostic ("they were capable but isolated from each other"). First-vs-third-person wealth language: mostly first person on the fintech proceeds ("what I built"), consistently third person on the jewelry stake ("the family interest," "the project"). Risk posture in her own words: "we preserve, we don't gamble."
-
-**Cat 13 — Sensitive information (volunteered only).** Volunteered: mother's increasing difficulty traveling between Paris and Byblos after a minor fall in 2024; a named fear that the jewelry business succession will fracture family relationships if not handled with the older sister's full participation; a regret that she did not formalize a US-France tax coordination framework pre-secondary-sale (she estimates seven figures of avoidable US-side tax friction). Not volunteered and therefore empty: political views, health status, any reference to her father's cause of death beyond the year. No family rift disclosed. Discretion discipline: the Beirut explosion reference is the closest the Book gets to trauma-adjacent material; she raised it unprompted in the first meeting and will return to it on her own terms. The Book holds it without surfacing it.
-
-**Cat 14 — Trigger events and timing markers.** Forward triggers: continuation-vehicle lock-release September 2026 (primary US-side liquidity event); mother's 80th birthday November 2028 (load-bearing family-calendar marker, referenced as the horizon for the jewelry succession plan); eldest child's Sciences Po final-cycle decision spring 2026 with a possible US law school application the year after; middle child's French-American school graduation June 2027, open US-or-France university path. Personal milestones: her own birthday April 14, mother's November 2, wedding anniversary July 19. Recent transitions in the last 24 months: secondary sale close (October 2023); naturalization five-year anniversary (October 2023, which triggered a US estate-tax rule update conversation that went unaddressed); youngest child's start at the French-American school upper division (September 2024). Liturgical windows to avoid: Orthodox Easter week (variable April-May), Orthodox Christmas (January 7 ± three days), Ramadan (loose, confirm rather than presume). Travel: Paris-Byblos mid-June through late August, Paris around January 7, Paris around Orthodox Easter. Last touch 2025-03-20 (coffee at her selected cafe, intro via COI 9). Next scheduled touch open; the window of interest is post-Orthodox-Easter 2026, pre-summer-travel.
-
-### Layer 2 — Decision log excerpt
-
-- *2025-02-18. Inference drawn.* Trigger: first meeting (intro via COI 9, at the French-American school finance committee room). Prospect 2 switched into Arabic twice when referencing her mother and the jewelry business; reverted to English only when the topic moved to the 2023 secondary sale. She never used English when describing "the project." Inference: the family business is the identity-load-bearing fact and the fintech exit is the instrumental one; any opener routed through the US exit will reach her second-heaviest signal. Updates Cat 6 and Cat 12.
-- *2025-02-19. Move considered.* Three options: (a) structural memo on the continuation-vehicle lock expiration in September 2026 paired with US trust architecture, rejected for leading with the instrumental axis; (b) a multi-advisor coordination pitch with the four named firms around the table, rejected because she reads advisor-coordination pitches as encroachment; (c) a narrow cross-border continuity frame pegged to her mother's 80th birthday (November 2028) as the family-internal deadline for succession of the Paris jewelry stake, selected because it routes through the heaviest signal and matches her Philosophy-dominant Five Ps rank.
-- *2025-02-22. Move taken.* Requested intro-continuation from COI 9 for a second meeting at Prospect 2's selected cafe. Pre-read: a one-page framing note (French on one side, English on the other) on how a US-France-Lebanon succession frame could anchor the jewelry stake transition across a 36-month horizon, with no firm named. Opening question: "If the 2028 birthday is the family-internal deadline, what would need to be true by summer 2026 for you to feel the architecture is in place?"
-- *2025-03-20. Outcome.* Second meeting held. She kept the French-side pre-read and asked for the English side to be revised (her note: "tighter, same substance"). Volunteered that her older sister has not yet been looped into the succession thinking because the sister treats the topic as premature. Requested a third meeting with Tarek present and asked whether the framing would need revision for a spouse "not in the business." Volunteered the seven-figure tax-friction regret from the 2023 close. Updates Cat 13 (regret) and Cat 2 (joint financial agency confirmed, not Prospect-lead). Pattern match flag: resembles Existing Client 4's signal set.
-- *2025-03-20. Question to surface.* Older sister's view on the 2028 horizon (she may read it as acknowledgment of mortality rather than a planning deadline, which would change sequencing). Paris notary's view on whether a US-side structure can interlock with the existing *mandat à effet posthume*. To surface in the third meeting only if she raises the sister question first; pressing it is hers to initiate.
-
-### Layer 3 — Pattern match
-
-- *Match #1.* Existing Client 4. Multi-jurisdictional family-business principal with a US-side exit secondary to a European-side inherited operating stake; Collective Harmony decision mode; Philosophy-lead Five Ps; female operator as family anchor; post-2020 diaspora sensitivity (Existing Client 4 is Egyptian-Levantine, comparable cultural surface). What worked there: opening at her selected cafe, scoping first proposal as a three-country coordination memo rather than a US-trust pitch, inviting spouse at meeting three not meeting one, pacing the relationship across a six-month arc with two written artifacts and one joint meeting with her Paris-side notary. What failed: a single attempt to include a US estate-planning partner before the banker had earned permission to convene; she did not respond for five weeks. Carry forward: do not convene advisors before earning it; French-language artifacts in parallel with English; never let the fintech exit become the anchor of any memo; mother's calendar is the household calendar. Avoid: single-advisor "quarterback" pitch, which reads as advisor-self-dealing in Collective Harmony mode.
-- *Anti-pattern.* Existing Client 7. Surface match (Paris-raised, post-secondary-sale, European inherited interest) but culturally Individualist in family decision mode, with a mother who ceded business control a decade earlier. The "heaviest signal routes through mother" play that fits Prospect 2 failed with Existing Client 7, who treated structural memos routed through her mother as patronizing. Lesson: surface cultural markers (country, language, inherited stake) mislead; the Collective Harmony vs. Individualist distinction is the operative variable and must be confirmed before applying the pattern.
-
-### Outreach play
-- **Channel.** Warm intro-continuation via COI 9 (fellow French-American school finance committee member, warm temperature, two-year relationship, intros routed through the school's fall fundraising cycle have converted on two prior occasions).
-- **Who introduces.** COI 9 by email, with a one-sentence context paragraph drafted by the banker and a French subject line ("Suite à notre conversation du comité"). Any bypass of COI 9 closes the door.
-- **Opening angle.** A narrow cross-border continuity frame for the Paris jewelry stake, pegged to her mother's 80th birthday (November 2028) as the family-internal deadline. The frame treats the US-side continuation-vehicle release (September 2026) as a secondary liquidity input to the primary succession question, not as the anchor. Philosophy-first, Performance-last, in her own language.
-- **Timing.** Post-Orthodox Easter 2026, pre-summer travel (late April through early June 2026). The September 2026 lock release is the latest viable pre-event window; waiting into Q3 2026 misses the planning runway and reduces the framing to a reactive tax conversation. Avoid Orthodox Easter week, her birthday week (April 14), and any day inside the French-American school graduation sequence.
-- **Second-meeting artifact.** A bilingual four-page continuity memo: French on the left, English on the right, same content. The memo maps three instruments (a US-side dynasty trust sized to the 2023 proceeds, an updated *mandat à effet posthume* for the jewelry stake, and a Delaware family LLC that could receive continuation-vehicle distributions on release) against the 2028 family-internal deadline. No firm named. No US estate-planning partner named or invited. A single paragraph flags the seven-figure tax-friction regret she volunteered and proposes a coordinated unwind across 18 months.
-- **Non-obvious signal that drove decision.** The Arabic "the project" reference for the jewelry business, switched out of every time she discussed the fintech exit, is the load-bearing signal. Any opener anchored on the US exit misreads the prospect as fintech founder first and family principal second. Inverting the anchor (November 2028 family birthday, not September 2026 US lock release) is the only opener that survives Rule 4. A second signal reinforces the choice: her prior-advisor postmortem ("they stopped knowing what was going on at home") frames "home" as Paris and Byblos, not Atherton. The coordinated cross-border continuity frame is the direct structural answer.
-
----
-
-## PROSPECT 3 — fully populated
-
-### Relationship stage
-Post-first-meeting. An intro-continuation email on 2026-02-10 (quoting his 2023 essay by name and asking one diagnostic question rather than pitching) produced a 26-hour reply and a 2026-02-11 first meeting at his selected coffee shop near 24th Street. He arrived with a marked-up printout of the email and three written questions, volunteered that he has delayed the family office DAF-review four times, and did not volunteer dollar figures. No second meeting scheduled; target window is mid-April through late May 2026, with a written pre-read framing a 90-day scoped second opinion on the dormant DAF and the 2030 bypass trust sunset.
-
-### Archetype
-Next-generation wealth recipient, inherited Bay Area tech wealth, identity-work-in-progress G2 inheritor with independent earned income.
-
-### Layer 1 highlights
-
-**Cat 1 — Core identity and residences.** Prospect 3 is 34, born in San Francisco to a Turkish immigrant father (arrived 1985) and a Turkish-Cypriot mother (arrived 1988). US citizen by birth; Turkish dual nationality (his father registered him at the Turkish consulate at birth). Both passports current; the Turkish passport used annually. Rents a one-bedroom apartment in Noe Valley since 2021 despite a net worth that would support outright purchase. The Noe Valley apartment is his only residence. California tax domicile. No EA, no chief of staff, no scheduling assistant. Not married; three-year relationship with a partner in public-sector civic technology (separate residences). Preferred name is the Turkish form of his first name, not the Americanized variant his Stanford transcript carries; using the transcript version reads as a database pull.
-
-**Cat 2 — Family, multi-generational.** Unmarried, no children. Sister (28) in a doctoral program in information science at Berkeley (third year of five), working on human-AI interaction; financially and legally independent but a co-beneficiary of the same inherited trust structure. Mother (62) remarried in 2023 to a Turkish-German financial consultant based in Berlin; she splits time between San Francisco and Istanbul. The remarriage has produced no additional children. Father died of a heart attack at 58 in August 2020. Paternal grandmother lives in Istanbul in fragile health (early-stage dementia acknowledged by the mother's side since 2024; not volunteered by Prospect 3 directly). His primary living family bond is with his sister; they speak weekly at minimum, and he routes every inheritance-adjacent planning question through her before responding to an advisor. Relationship with his mother is civil but cooler since the remarriage.
-
-**Cat 3 — Education, across generations.** Prospect 3: Stanford Symbolic Systems (BS, 2013). No graduate degree. Informal continuing education through industry AI conferences (attendee since 2019, not a presenter). Sister at Berkeley (doctoral, third year of five). Late father: undergraduate in Istanbul, master's in computer science at a Texas state university (1989), the academic path that brought the family to the US on the H-1B-to-green-card sequence. Mother: lycée in Nicosia, no tertiary degree. Stanford alumni network is lightly used; he attends a class-reunion-adjacent dinner every two or three years. Not a Stanford giver. The Berkeley connection lives through his sister's cohort, not his own.
-
-**Cat 4 — Wealth story.** G2 inheritor. His father accumulated wealth as an early engineering executive at a prominent Bay Area enterprise software company through pre-IPO grants and post-IPO vested stock; at death in August 2020 the estate was approximately $130M, split equally between Prospect 3 and his sister net of a residual interest for his mother. Prospect 3's share is roughly $65M, consolidated at the mother's family office (a US multi-family office since 2021) in a bypass trust with him as both current beneficiary and co-trustee. A separate inherited donor-advised fund sits at $1.2M, dormant since his father's death, with no gifts authorized in six years. His own earned compensation is separate: $250K base as a senior product manager at a mid-stage AI company plus approximately $600K annually in vesting RSUs from his own employer, custody held at a large retail brokerage with ~$1.4M in it today. The inherited portfolio is approximately 90/10 liquid/illiquid; the mother's family office diversified out of the father's employer stock across 2020–2022, so there is no concentrated single-stock position to unwind. No dynasty trust beyond the bypass structure. No GRAT, no CRT, no CLT, no foundation. Every existing product is an inheritance of the mother's family office selections, not his.
-
-**Cat 5 — Professional history and boards.** Post-Stanford: three years at a consumer platform company as a PM, three at a developer tools company, two at an early-stage AI research lab (Series B when he joined), and since 2022 senior PM at the current mid-stage AI company. Career narrative in his own words: "I do the work." No public or private company board seats. One advisory role on an AI ethics non-profit, unpaid. Occasional posts on a personal blog about interpretability research. No LinkedIn activity beyond the current role line. Published one short essay in an industry newsletter (2023) on the difference between what users say they want from AI products and what they actually build patterns around. That essay is the operative public surface; quoting it by name in a first written touch is the entry condition for the relationship.
-
-**Cat 6 — Cultural origin and orientation.** Second-generation American, both parents first-generation Turkish immigrants. Paternal Alevi lineage, maternal Turkish-Cypriot Sunni-adjacent; not religiously observant. Speaks Turkish conversationally with a US accent his paternal relatives in Istanbul tease him about; reads Turkish only with effort. Identifies as American first, Turkish second, and specifically Alevi-descended Turk third when the topic of religion arises, which it rarely does. Holds a small inactive interest in a family apartment on Istanbul's European side that his father co-owned with two paternal uncles. Travels to Istanbul annually in mid-October for ten days to spend time with his paternal grandmother and uncles. Family decision-making mode reads Individualist-with-sibling-veto: decisions are his, not his mother's, and the sister carries an implicit veto on anything touching the inherited trust or the grandmother's future care. His parents' immigration story is a story he tells carefully; he watched his father tell it differently in public and in private and has absorbed the discipline.
-
-**Cat 7 — Food, beverage, dietary.** No dietary restrictions, no religious observance. Consistently selects a specific third-wave coffee shop near 24th Street in Noe Valley for every meeting he schedules; has selected it for all five prior advisor conversations and the first conversation with the banker. Cuisine preferences: Mexican (the reason for his twice-yearly Mexico City trips, which follow a rigorously researched food agenda), Turkish meze, Japanese, Californian farm-to-table only when someone else picks the venue. Wine: rare, natural-wine preference when he drinks, no cellar. No spirits. Pour-over black coffee, no sugar, no exceptions. Declines meal-based advisor meetings as a matter of course; has declined two dinner proposals to date.
-
-**Cat 8 — Sports, fitness, hobbies, travel.** Runs three times a week, short routes in Mission Dolores Park and Bernal Heights. Climbs at a local bouldering gym twice a week. Does not play tennis, does not golf, no club memberships of any kind. Hobbies: reads more fiction than nonfiction, maintains a curated library of twentieth-century Turkish literature in translation, plays in a private trivia league with former Stanford friends. Travel rhythm: Istanbul mid-October for ten days, Mexico City twice a year for five to seven days each on a food agenda, one long weekend in rural California in late spring, a short Berlin trip every other year since his mother's remarriage. Commercial economy domestic, premium economy international; no private aviation. Cultural consumption: SFMOMA member events, one film-society subscription, avoids symphony and opera.
-
-**Cat 9 — Personality and communication.** Reserved, analytical, deeply skeptical. Tests every new person before trusting any of them; the test is always an attention test, not a credentials test. Detail-oriented on narrow topics (AI product design, Turkish literature, Mexico City taquerias) and dismissive of what he reads as advisor-manufactured urgency. Deliberative on anything inheritance-adjacent; decisive on his own career. Preferred channel: email only, short messages, bullet format. Texts only his sister, his partner, and two close friends. Response-time norm: 48 hours on substance, same-day on scheduling. Calendar is on his own laptop. Prefers 3pm to 5pm meetings at his selected coffee shop, 45 minutes maximum. Declined a walking meeting once with the reason "I can't read notes while walking." Five Ps rank ordering: People > Process > Philosophy > Fees > Performance. Fees mid-stack, not bottom, because he has been burned by opacity. Performance genuinely last; he reads performance-lead pitches as a category error. Media diet: a daily finance-and-law commentary column, long-form tech journalism, The Atlantic, one Turkish left-liberal newsletter, Asterisk magazine, interpretability-research Twitter.
-
-**Cat 10 — Philanthropy.** The $1.2M dormant inherited DAF is the only formal giving vehicle; no gifts authorized in six years. Stated once: "I don't want to play philanthropy with my father's money without a thesis." Direct personal giving is modest, $10–20K annually, split across a Mission District community organization, an AI alignment non-profit, and an Istanbul-based civil society organization focused on earthquake response. No naming gifts. No non-profit board seats beyond the unpaid AI ethics advisory role. Development offices and naming-gift paths are irrelevant to the relationship. The dormant DAF is a conversation, not a product opportunity; forcing it becomes the failure mode.
-
-**Cat 11 — Network, memberships, centers of influence.** No club memberships. Minimal alumni engagement. Close friends referenced by first name: his sister (always by first name, frequently), his partner (first name, less frequently in professional context), two Stanford Symbolic Systems classmates now at AI companies, one high school friend from San Francisco who is a public defender. The sister is the effective intro-source-of-record for anything touching the inherited trust; a request that bypasses her reads as an end-run and closes the relationship. The mother's family office is the existing advisor relationship and the incumbent he is evaluating; he will walk from any meeting that feels like a mandate competition. Prior advisor history: five meetings over 18 months, zero hired. For each of the five he researched the advisor's LinkedIn profile in advance and asked a specific question about a post or publication; the recognition failure rate is what ended each conversation. First-material-proposal discipline: the banker must demonstrate he has read the prospect's own essay and show it in writing, not in conversation.
-
-**Cat 12 — Conversational signals and behavioral notes.** Topics volunteered unprompted: his own AI work, his sister's doctoral research (he sketches her dissertation in three sentences and does so unprompted), his Istanbul trips, his grandmother's apartment and the smell of his uncle's kitchen, the Mexico City restaurant circuit, his distrust of founders who talk about "impact." Topics avoided: specific dollar figures from the inherited portfolio, the word "inheritance" itself (replaced with "what my father left" or silence), his father's public career as a known Bay Area tech executive (he does not surface the recognizability), his mother's remarriage (referenced obliquely, the stepfather never named). Topics returned to repeatedly: what to do with the dormant DAF, how to keep the trust architecture from dictating his life, the question of whether he should tell his sister about the full scale of the distributions he has received (she knows approximately, not exactly). Names: sister by first name, partner by first name, late father as "my father" or "my dad" without a given name, mother as "my mother" (not "Mom"), stepfather never named. Pacing: quick on his own topics, slow and measured on anything inheritance-adjacent, 20 to 30-second pauses when genuinely thinking through a planning question. Boundaries voiced: "I don't want to meet at home," "I don't want to talk about performance," "I don't want a pitch." Discovery answers captured: values question ("I want to not let this thing make me a worse version of myself"); three-year question ("the DAF is active with a thesis my sister and I wrote together; the trust architecture has an explicit exit ramp for when I want to consolidate it under my own control; I have not become someone I wouldn't have respected at 25"); prior-advisor diagnostic ("they all sound the same, none of them noticed me noticing them"). First-vs-third-person wealth language: third person on everything inherited ("the money," "the trust," "what my father left"); first person on his own earned compensation ("my salary," "my options"). The split is consistent across 14 recorded turns and is the operative diagnostic for identity-work-in-progress.
-
-**Cat 13 — Sensitive information (volunteered only).** Volunteered: sustained low-grade anxiety about the inherited portfolio and a specific fear that he will "do something dumb" and damage the relationship with his sister; a regret that he did not ask his father direct questions about money before the heart attack; a matter-of-fact therapy history. Grandmother's dementia has been mentioned by his mother in a separate conversation with COI 11, not by Prospect 3 directly; the Book records the fact but does not surface it. Not volunteered and therefore empty: his own health status, political orientation beyond implicit signals, father's cause of death beyond "heart attack at 58," financial or personal detail of the mother's remarriage. The word "inheritance" reads as a trauma-adjacent register; the Book does not use it in any written touch to him.
-
-**Cat 14 — Trigger events and timing markers.** Forward triggers: sister's doctoral defense (expected spring 2028); grandmother's care trajectory across the next 24–36 months; the bypass trust's 10-year administrative anniversary in 2030, at which the current structure sunsets without his explicit instruction; the dormant DAF's sixth-anniversary no-gift status (end of 2026) which triggers an internal family-office review conversation he has delayed four times; his own 35th birthday (January 9, 2027). Personal milestones: his own birthday January 9, sister's March 22, father's death anniversary mid-August, paternal grandmother's birthday late November. Recent transitions in the last 24 months: his mother's 2023 remarriage and new travel pattern; his sister's 2024 transition to doctoral candidacy; his own 2024 promotion to senior PM. Calendar avoidances: the August anniversary window of his father's death (each year, two weeks on either side, non-negotiable); the mid-October Istanbul trip (he is offline); the two Mexico City trips. No religious-observance windows. Last touch 2026-02-11 (coffee at his selected shop, intro via COI 11). Next scheduled touch open; the target window is mid-April through late May 2026, after his mother's return from Istanbul and before the summer.
-
-### Layer 2 — Decision log excerpt
-
-- *2026-02-04. Inference drawn.* Trigger: research pass ahead of the first meeting scheduled via COI 11. Read the 2023 essay Prospect 3 published on user-said-versus-user-did patterns in AI products. Inference: the essay's frame, watching what people pattern around rather than what they claim to want, is his working epistemology and he applies it to advisors. The next written touch must be written in the voice of that frame, not the voice of a pitch. Updates Cat 5 and Cat 9.
-- *2026-02-09. Move considered.* Three options: (a) a structured second-opinion memo on the full inherited portfolio with a named lead critique of the mother's family office, rejected for triggering the mandate-competition reflex that ended five prior conversations; (b) an unframed first meeting at his coffee shop with no written pre-read, rejected for wasting the highest-leverage signal (his essay) and confirming the "they all sound the same" read; (c) a pre-read that engages his essay by name, proposes a narrow 90-day governance-and-identity second opinion scoped only to the dormant DAF and the bypass trust's 2030 sunset, and states explicitly that the mother's family office is not in scope, selected because it threads both his discovery answers and the prior-advisor failure pattern.
-- *2026-02-10. Move taken.* Sent a two-paragraph email intro-continuation note written in the voice of a question rather than a pitch. Opening sentence referenced his essay and named the specific user-said-versus-user-did frame without flattering him on it. Asked one question: "What would have to be true about a next advisor conversation for it not to collapse into the fifth version of the same one?" Attached no deck, no capability statement, no firm-branded PDF.
-- *2026-02-11. Outcome.* He replied within 26 hours, short. Accepted the coffee shop meeting. Arrived with a single marked-up printout of the email and three written questions, one of which was "what does a 90-day second opinion look like if you are genuinely not asking for a mandate." Volunteered that he has delayed the family office DAF-review conversation four times. Did not volunteer dollar figures and did not ask the banker to state any. Pattern match flag: anti-pattern check against Existing Client 8 required before any scoping document.
-- *2026-02-16. Question to surface.* Whether his sister is a participant in the 90-day second opinion or an observer (the difference changes the artifact). Whether the grandmother's care trajectory should enter the governance scope or be held until he surfaces it. Whether the DAF thesis is one he wants to write with his sister or alone. To surface: the sister question at meeting three, not meeting two; the grandmother question not at all unless he raises it.
-
-### Layer 3 — Pattern match
-
-- *Match #1.* Existing Client 12. G2 tech inheritor, consistent third-person-on-inherited-first-person-on-earned wealth language, father as invisible anchor, sister relationship load-bearing, Individualist-with-sibling-veto decision mode, essay-writing published habit. What worked: first written touch quoted his own published writing with precision and without flattery; scoping the engagement as a 90-day governance review with a defined exit made it feel opt-in rather than sales-funnel; including the sister in writing (not meetings) as a second reader of every artifact created a shared epistemic frame between the siblings without making the sister a client; sequencing identity-frame conversations before any structural redesign; refusing to surface his father's public career unless he surfaced it first. What failed: one early attempt to propose a family governance document that included the mother by default (not by his explicit invitation) triggered a two-month cooling. Carry forward: quote his essay; scope narrowly; write the sister in as a reader only with his permission; never surface the mother or the grandmother unprompted; avoid the word "inheritance" in writing. Avoid: any document that names the mother's family office in a critique register, any document proposing a family governance structure, any mention of performance.
-- *Anti-pattern.* Existing Client 8. Surface match (G2 inheritor, third-person wealth language, refusal of standard mandate pitches, declined four advisors in 14 months), but his third-person language was avoidance of detail rather than identity work; the 90-day scoped engagement that worked for Existing Client 12 bored Existing Client 8 within 30 days because he did not want to do identity work, he wanted the administrative friction to go away. Lesson: third-person wealth language is necessary but not sufficient; the Book must confirm the prospect is doing identity work (Prospect 3's "I don't want to become someone I wouldn't have respected at 25" answers this) before applying the Existing Client 12 play. Applied here: Prospect 3 is on the identity-work side of the line; proceed, but build in an explicit 30-day checkpoint at which either side can walk.
-
-### Outreach play
-- **Channel.** Warm intro via COI 11 (Berkeley faculty member who taught both siblings in separate undergraduate courses, warm temperature, trusted by the sister and therefore implicitly trusted by Prospect 3). COI 11 is a single-use introduction surface for this household; additional intro requests through her will strain the relationship.
-- **Who introduces.** COI 11 by email with no firm reference and no role title, addressed to Prospect 3 with his sister copied at her explicit prior permission. The banker drafts the context paragraph in plain language without naming any firm or service.
-- **Opening angle.** A 90-day governance-and-identity second opinion scoped only to the dormant DAF and the 2030 sunset question on the bypass trust. States explicitly in writing that the mother's family office is not in scope, that no mandate is being sought, and that the 90-day window has a defined exit on either side. The written frame quotes his essay by name and uses his user-said-versus-user-did language as the operating epistemology for the engagement itself.
-- **Timing.** Mid-April through late May 2026, after his mother's spring return from Istanbul and before the summer slow period. Strictly avoids the August father's-death anniversary window (two weeks either side), the mid-October Istanbul trip, and the two Mexico City trips. The year-end 2026 internal DAF-review the family office has scheduled is the natural inflection; acting before that review preserves his agency over the thesis.
-- **Second-meeting artifact.** A three-page governance memo: one page framing the DAF thesis as an open question (not a proposal), one page mapping the 2030 sunset as a decision tree with three options and their reversibility characteristics, one page stating the 90-day engagement terms including a 30-day checkpoint. No firm name. No capability statement. The sister is named as a second reader with his explicit permission, or not named at all if that permission is not yet given. A single sentence, not a paragraph, references his essay.
-- **Non-obvious signal that drove decision.** The load-bearing signal is not the third-person wealth language on its own; that is necessary but not sufficient, per the Existing Client 8 anti-pattern. It is the pairing of the third-person language with his first-person discovery answer ("I don't want to become someone I wouldn't have respected at 25"). That combination places him on the identity-work side of the line. The second load-bearing signal is that he noticed, in each of five prior advisor meetings, that the advisor did not notice what he had written; quoting his essay in writing is not flattery, it is the entry condition. The third signal is the dormant DAF itself: six years of no gifts from a $1.2M balance is avoidance sustained over time, and a 90-day scope gives him a discrete surface on which to do the work he has already said he wants to do, without forcing him to do it on the full portfolio at once.
+(See `prospects/prospect_1.md` for the full decision log plus the inference application: load-bearing signals are family weight and heritage identity; co-founder absence is structural; no contradictions; family is heaviest; Layer 3 points to Existing Client 1 play; outreach decision is warm intro through COI 4 to estate counsel COI 7 for 7am Stanford Dish run, opening on generational trust accommodating mother's long-term care.)
 
 ---
 
@@ -601,9 +431,113 @@ Next-generation wealth recipient, inherited Bay Area tech wealth, identity-work-
 
 When we get to the memo:
 - **Compress the AI sections** to one ~80-word paragraph at the end of the memo.
-- **Fold in the load-bearing data point**: 67% of affluent prospects who hired an advisor already knew someone with that advisor (Oechsli). Justifies the Book's emphasis on relational mapping as a first-class citizen.
-- **Add a tight section on what the Book actually solves**: ocean-boiling fails because templated outreach cannot adjust to the prospect's heaviest weighted P; relationship intelligence reframes top-of-funnel as fit-diagnosis first, capability demonstration second.
-- **Keep the workflow paragraph short**: first encounter logs to Book within 24 hours; conversational signals verbatim; public signals refresh monthly via research-compression pass; every prospect carries a single-sentence outreach thesis.
+- **Fold in the load-bearing data point**: 67% of affluent prospects who hired an advisor already knew someone with that advisor (Oechsli). Justifies the Prospect File's emphasis on relational mapping as a first-class citizen.
+- **Add a tight section on what the Prospect File actually solves**: ocean-boiling fails because templated outreach cannot adjust to the prospect's heaviest weighted P; relationship intelligence reframes top-of-funnel as fit-diagnosis first, capability demonstration second.
+- **Keep the workflow paragraph short**: first encounter logs to the Prospect File within 24 hours; conversational signals verbatim; public signals refresh monthly via research-compression pass; every prospect carries a single-sentence outreach thesis.
+
+---
+
+## ACRONYMS AND TERMS
+
+Glossary of acronyms and shorthand in use across the project. Add new terms here as they enter the working vocabulary.
+
+### Wealth structures and tax instruments
+- **DAF** — Donor-Advised Fund
+- **GRAT** — Grantor Retained Annuity Trust
+- **CRT** — Charitable Remainder Trust
+- **CLT** — Charitable Lead Trust
+- **ILIT** — Irrevocable Life Insurance Trust
+- **IDGT** — Intentionally Defective Grantor Trust
+- **GST** — Generation-Skipping Transfer (tax)
+- **QDOT** — Qualified Domestic Trust (for non-US-citizen spouses)
+- **QSBS** — Qualified Small Business Stock (IRC Section 1202 exclusion)
+- **PPLI** — Private Placement Life Insurance
+- **SBL** — Securities-Based Lending (line of credit collateralized by marketable securities)
+- **LTC** — Long-Term Care (insurance)
+- **AMT** — Alternative Minimum Tax
+- **IRC** — Internal Revenue Code
+- **10b5-1** — SEC Rule 10b5-1 trading plan (preset stock-sale schedule for insiders)
+- **RSU** — Restricted Stock Unit
+- **LLC** — Limited Liability Company
+- **SCI** — Société Civile Immobilière (French civil real-estate holding company)
+- **mandat à effet posthume** — French legal instrument for posthumous administration of a closely held interest (not an acronym; listed for cross-reference)
+
+### International tax and cross-border
+- **FBAR** — Foreign Bank Account Report
+- **PFIC** — Passive Foreign Investment Company
+- **CRS** — Common Reporting Standard (OECD financial-account info exchange)
+- **OCI** — Overseas Citizen of India (lifelong India visa for diaspora)
+
+### Wealth tiers and family generations
+- **HNW** — High-Net-Worth (industry shorthand: $1M+ investable assets)
+- **UHNW** — Ultra-High-Net-Worth (industry shorthand: $30M+ net worth)
+- **G1, G2, G3** — first-, second-, third-generation wealth holder (G1 = creator, G2 = inheritor, G3 = grandchildren cohort)
+
+### Roles and credentials
+- **COI** — Center of Influence (referral source: outside counsel, CPA, accountant, board member, school development officer, etc.)
+- **EA** — Executive Assistant
+- **CFA** — Chartered Financial Analyst
+- **CPA** — Certified Public Accountant
+- **CFP** — Certified Financial Planner
+- **JD** — Juris Doctor
+- **PM** — Product Manager
+- **VP** — Vice President
+- **CEO** — Chief Executive Officer
+- **EIR** — Entrepreneur in Residence (typical role at venture firms)
+
+### Education
+- **BS** — Bachelor of Science
+- **CS** — Computer Science
+- **MBA** — Master of Business Administration
+- **MPP** — Master of Public Policy
+- **HKS** — Harvard Kennedy School
+- **GSD** — Harvard Graduate School of Design
+- **HEC** — HEC Paris (École des Hautes Études Commerciales)
+- **ESCP** — École Supérieure de Commerce de Paris
+- **K** — Kindergarten (used in "K-college" / "K through grad" education-stage references)
+
+### Firm types, entities, and finance shorthand
+- **MFO** — Multi-Family Office
+- **SFO** — Single-Family Office
+- **YPO** — Young Presidents' Organization (peer network of operators / CEOs)
+- **M&A** — Mergers and Acquisitions
+- **IPO** — Initial Public Offering
+- **PE** — Private Equity
+- **IR** — Investor Relations
+- **SaaS** — Software as a Service
+
+### SEC filings (used in provenance context)
+- **Form 4** — insider trading disclosure (officer/director equity activity)
+- **S-1** — IPO registration statement
+- **10-K** — annual report
+- **990** — IRS annual filing for non-profit organizations and private foundations
+
+### Geographic shorthand
+- **SF** — San Francisco
+- **PNW** — Pacific Northwest
+- **CA / NY / etc.** — US state codes (standard usage)
+
+### Project-internal codes (Layer 1, provenance, methodology)
+- **The Client Book** — case-study title only (the project's brand and the title under which it publishes). NOT used in body text to refer to the structured-memory system; that is the Prospect File.
+- **Prospect File** — the structured-memory system per relationship. Each prospect (and each existing client we cross-reference) has one Prospect File; the file persists across stages of the relationship. Replaces "the Book" in body text. Distinct from "book of business," which refers to the firm's existing-client roster.
+- **Pipeline** — the system-level view across all Prospect Files. Each file sits at a stage in the pipeline: qualification, first-touch, multi-meeting depth, existing-client. The same Prospect File travels with each relationship across stages.
+- **Cat 1–14** — Layer 1 schema categories: (1) Core identity / residences; (2) Family, multi-generational; (3) Education; (4) Wealth story; (5) Professional history / boards; (6) Cultural origin / orientation; (7) Food, beverage, dietary; (8) Sports, fitness, hobbies, travel; (9) Personality and communication; (10) Philanthropy; (11) Network, memberships, COIs; (12) Conversational signals and behavioral notes; (13) Sensitive (volunteered only); (14) Trigger events and timing markers
+- **DD** — Decision-Driving field (Layer 1 schema tag; field carries explicit if/then logic for outreach decisions)
+- **REF** — Reference field (Layer 1 schema tag; supports other fields, no direct decision rule)
+- **M1, M2, M3...** — Numbered meeting (with date in the provenance ledger)
+- **E** — Email or written exchange between meetings (provenance code)
+- **Sp** — Volunteered by spouse during a joint meeting (provenance code)
+- **Obs** — Behavioral observation during a meeting (pacing, name usage, body language; provenance code)
+- **Inf** — Inferred from cross-reference of multiple signals (provenance code)
+- **RTQ** — Risk Tolerance Questionnaire (industry-standard advisor intake form; Cat 12 distinguishes risk posture in own words from any RTQ score)
+- **Five Ps** — People, Philosophy, Process, Performance, Fees (Beyer's five evaluation criteria UHNW prospects rank-order when comparing advisors)
+
+### External works and outlets (in Notes & Sources)
+- **FA-Mag** — Financial Advisor Magazine
+- **FAS** — Financial Advisor Success (Michael Kitces podcast)
+- **CEG** — CEG Worldwide (advisor coaching firm; John Bowen)
+- **CCH** — Commerce Clearing House (publisher of Kochis's *Wealth Management*)
+- **CFA Institute** — Chartered Financial Analyst professional body (publisher of Beyer's "Relationship Alpha" brief)
 
 ---
 

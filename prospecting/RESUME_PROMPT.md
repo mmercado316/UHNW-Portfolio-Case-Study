@@ -4,7 +4,7 @@ Copy everything below the dashed line into a fresh session opened at `/Users/Mar
 
 ---
 
-I'm continuing a multi-session project to produce a UHNW prospecting case study ("The Client Book") that will publish on mario-mercado.com. The prior session locked the substance through all three prospects. Prospects 1, 2, and 3 are now fully drafted in the working memory. Prospects 2 and 3 are pending my revision notes (Prospect 1 was locked in an earlier session). After revisions, the sequence moves to a light revision pass on strategic memo / opening / closing, then a fresh full draft of the deliverable, then site integration and Vercel deployment.
+I'm continuing a multi-session project to produce a UHNW prospecting case study ("The Client Book") that will publish on mario-mercado.com. Prospects 1, 2, and 3 are fully drafted in the working memory and are all pending my revision notes. After revisions, the sequence moves to a light revision pass on strategic memo / opening / closing, then a fresh full draft of the deliverable, then site integration and Vercel deployment.
 
 **Before responding, read these files in order:**
 
@@ -26,11 +26,11 @@ I'm continuing a multi-session project to produce a UHNW prospecting case study 
 
 **Current state of each prospect (each section opens with a Relationship stage block):**
 
-- **Prospect 1** (exited tech founder, mid-career, post-acquisition). Post-second-meeting; third meeting scheduled 2025-05-05 at prospect's invitation with spouse present. Locked.
+- **Prospect 1** (exited tech founder, mid-career, post-acquisition). Post-second-meeting; third meeting scheduled 2025-05-05 at prospect's invitation with spouse present. Drafted, pending my revision notes.
 - **Prospect 2** (foreign-born first-gen operator, French-Lebanese, multi-jurisdictional family business). Post-second-meeting; third meeting requested by prospect with spouse present; target window late April through early June 2026. Drafted, pending my revision notes.
-- **Prospect 3** (next-gen wealth recipient, Turkish-American, inherited Bay Area tech wealth). Post-first-meeting; second-meeting target mid-April through late May 2026, with a written pre-read framing a 90-day scoped second opinion on the dormant DAF and the 2030 bypass trust sunset. Drafted, pending my revision notes.
+- **Prospect 3** (next-gen wealth recipient, multi-generational US white American, inherited Bay Area tech wealth). Post-first-meeting; second-meeting target mid-April through late May 2026, with a written pre-read framing a 90-day scoped second opinion on the dormant DAF and the 2030 bypass trust sunset. Drafted, pending my revision notes.
 
-**Immediate next step:** Confirm you've read `working_memory_v2.md` and understood the constraints, then wait for my revision notes on Prospects 2 and 3. Do not re-draft either prospect without my notes. Do not proceed to the strategic memo / opening / closing revision sequence until I explicitly confirm both profiles are locked.
+**Immediate next step:** Confirm you've read `working_memory_v2.md` and understood the constraints, then wait for my revision notes on Prospects 1, 2, and 3. Do not re-draft any prospect without my notes. Do not proceed to the strategic memo / opening / closing revision sequence until I explicitly confirm all three profiles are locked.
 
 **Sequence after Prospects 2 and 3 are locked** (don't proceed without confirming at each gate):
 1. Strategic memo light revision (compress AI subsections; fold in 67%-of-affluent-prospects-knew-someone data point).
