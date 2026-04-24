@@ -33,7 +33,7 @@ We are in the **substance-locking phase** before drafting the final deliverable.
 9. Site integration (locate Next.js repo, reconcile frontmatter, drop into content/projects/)
 10. Vercel deployment
 
-**Prospect profiles:** live in `prospects/prospect_1.md`, `prospects/prospect_2.md`, `prospects/prospect_3.md`, `prospects/prospect_4.md`. The four are staggered across the BD funnel: Prospect 4 (qualification, pre-M1) → Prospect 3 (first-touch, post-M1) → Prospects 1 and 2 (post-M2 depth, two cultural contexts). See README.md for the full file map.
+**Prospect profiles:** live in `website/prospect_1.md`, `website/prospect_2.md`, `website/prospect_3.md`, `website/prospect_4.md`. The four are staggered across the BD funnel: Prospect 4 (qualification, pre-M1) → Prospect 3 (first-touch, post-M1) → Prospects 1 and 2 (post-M2 depth, two cultural contexts). See README.md for the full file map.
 
 ---
 
@@ -354,7 +354,7 @@ Per prospect, dated chronological journal. Six entry types:
 
 Each entry holds: date, type, trigger, content, Layer 1 cross-references (which fields informed or were updated), Layer 3 cross-references (which COIs or pattern matches involved), author.
 
-**Worked example:** see `prospects/prospect_1.md` for the full Layer 2 decision log on Prospect 1.
+**Worked example:** see `website/prospect_1.md` for the full Layer 2 decision log on Prospect 1.
 
 ---
 
@@ -390,7 +390,7 @@ Per prospect. Flags 1-3 Existing Clients whose signal set this prospect resemble
 - **Pattern match #2** [DD]. Same structure if exists.
 - **Anti-pattern** [DD]. Existing Client whose situation looked similar but played out differently. What looked like a match but wasn't. Why the move that worked there will not work here.
 
-**Worked example:** see `prospects/prospect_1.md` for the Pattern Map on Prospect 1.
+**Worked example:** see `website/prospect_1.md` for the Pattern Map on Prospect 1.
 
 ---
 
@@ -416,7 +416,7 @@ Three highest-yield early-meeting questions:
 Once all three are in Cat 12, outreach thesis is close to determined. Until all three captured, outreach is tentative; once captured, outreach is decisive.
 
 ### Worked example for Prospect 1
-(See `prospects/prospect_1.md` for the full decision log plus the inference application: load-bearing signals are family weight and heritage identity; co-founder absence is structural; no contradictions; family is heaviest; Layer 3 points to Existing Client 1 play; outreach decision is warm intro through COI 4 to estate counsel COI 7 for 7am Stanford Dish run, opening on generational trust accommodating mother's long-term care.)
+(See `website/prospect_1.md` for the full decision log plus the inference application: load-bearing signals are family weight and heritage identity; co-founder absence is structural; no contradictions; family is heaviest; Layer 3 points to Existing Client 1 play; outreach decision is warm intro through COI 4 to estate counsel COI 7 for 7am Stanford Dish run, opening on generational trust accommodating mother's long-term care.)
 
 ---
 
