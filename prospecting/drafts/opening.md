@@ -16,4 +16,4 @@ Prospects at this wealth tier are not short on advisor outreach. They are short 
 
 *Relationship intelligence*, the operating frame of this case study, is the discipline that closes this gap. It is structured memory captured from attentive listening, cross-referenced with public signals, organized into a *Prospect File* per relationship that drives one decision: the right opening to the right person at the right moment.
 
-This piece lays out the operating framework, the underlying schema, four mock Bay Area tech profiles staggered across the prospecting pipeline (targeting, outreach, discovery, advancement), and a view on where AI augments this work and where it must not replace it. Each profile shows the Prospect File captured at a decision point; together they trace the pipeline.
+This piece lays out the operating framework, the underlying schema, four mock Bay Area tech profiles staggered across the prospecting pipeline (targeting, outreach, discovery, advancement), and the discipline that distinguishes relationship intelligence from data harvesting. Each profile shows the Prospect File captured at a decision point; together they trace the pipeline.

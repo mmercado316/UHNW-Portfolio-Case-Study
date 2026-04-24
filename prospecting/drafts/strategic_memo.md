@@ -34,6 +34,3 @@ Neither signal type is useful alone. A standalone public-data pull produces a do
 
 Every first encounter logs to the Prospect File within 24 hours. Conversational signals go in verbatim. Public signals refresh monthly via a research-compression pass. Every prospect carries a single-sentence outreach thesis answering one question: what is the opening that is impossible to mistake for a template? Outreach moves only when the thesis is clean.
 
-## AI as build substrate
-
-AI earns its place on the signal layer. A research-compression pass produces a 20-minute structured brief per prospect (filings, board activity, philanthropy, network cross-references). Pattern recognition surfaces shared COIs and structural similarities across the pipeline. Three uses earn their keep: signal compression, pattern surfacing, and prompting the banker rather than messaging the client. The line every tier-one firm has drawn (1) is the line the Prospect File draws: AI supports advisor cognition, AI does not originate the client-facing message.

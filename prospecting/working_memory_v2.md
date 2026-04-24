@@ -75,7 +75,7 @@ Most senior associates and VPs at UHNW advisory firms boil the ocean with templa
 
 1. **The piece is a Client Book case study, NOT a JPM prospecting curriculum.** Every research finding from the operational craft pass (Prince/Allison/Oechsli/Bowen/etc.) lands as "this is what the Prospect File captures" or "this is the decision the Prospect File drives," NOT as top-down methodology.
 
-2. **AI is the build substrate (in title), not the body's headline.** "AI-Augmented" stays in the title because it honestly describes how the playbook was built. The strategic memo compresses AI to one ~80-word paragraph at the end. Banker craft is the body's center of gravity.
+2. **AI supplements the prospecting process; it does not drive it.** The case-study title is "The Client Book: Relationship Intelligence for UHNW Prospecting" (no "AI-Augmented" in the title). The strategic memo no longer has a standalone AI section; incidental AI references appear only where accurate to industry practice (templated-outreach cadence, provenance discipline around public-record synthesis) and in third-party landscape grounding (tier-one firm positions) held in an "Additional context" footer of Notes & Sources rather than as body-cited material. Banker craft is the body's center of gravity.
 
 3. **Length constraint relaxed.** The deliverable will render as discrete sections on the Vercel site, not as one long document. Don't over-optimize for word count; optimize for content correctness.
 

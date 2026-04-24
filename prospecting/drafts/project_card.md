@@ -6,8 +6,8 @@
 
 ```yaml
 ---
-title: "The Client Book: AI-Augmented Prospecting for UHNW Clients"
-slug: "ai-augmented-uhnw-prospecting"
+title: "The Client Book: Relationship Intelligence for UHNW Prospecting"
+slug: "client-book-uhnw-prospecting"
 date: "April 2026"
 subtitle: "A relationship-intelligence playbook for converting cold and warm UHNW leads into first meetings."
 summary: "A structured Prospect File and outreach discipline for ultra-high-net-worth prospecting in the Bay Area tech vertical. Four mock profiles staggered across the BD funnel (qualification, first-touch, multi-meeting depth), each built from attentive listening cross-referenced with public signals. Banker craft at the center; AI compresses the signal layer but does not originate the client-facing message."
