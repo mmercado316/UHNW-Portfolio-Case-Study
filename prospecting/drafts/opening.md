@@ -10,7 +10,7 @@ The supply of identifiable ultra-high-net-worth prospects in the Bay Area is not
 
 Identification is solved. Conversion is not.
 
-The typical senior associate or vice president at a UHNW advisory firm runs a templated outreach program. A list of 300 names is loaded into a CRM. Each name receives the same five-touch sequence: an introductory email, a LinkedIn note, a market-update forward, a soft event invitation, a breakfast ask. The template is fast, measurable, and feels like activity. It is also legible as a template to the prospect the moment they open it. Lengthening the cadence to ten or fifteen touches with AI-assisted personalization does not change the diagnosis; more template is still template. The result is a conversion rate that bottoms out somewhere below industry mean and a book of business that grows almost entirely by luck.
+Templated outreach is standard practice at UHNW advisory firms. A typical sequence runs through email, LinkedIn, market-update shares, event invitations, and meeting requests. The template is fast, measurable, and feels like activity. It is also legible as a template to the prospect the moment they open it. Lengthening the sequence with AI-assisted personalization does not change the diagnosis; more template is still template. Conversion rates suffer accordingly, and the resulting book grows mostly by chance.
 
 Prospects at this wealth tier are not short on advisor outreach. They are short on advisors who understand them before the first meeting.
 
