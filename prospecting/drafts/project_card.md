@@ -31,7 +31,7 @@ impactMetrics:
     label: "Bay Area tech profiles staggered across the BD funnel"
   - value: "14 categories"
     label: "Layer 1 schema with ~150 fields"
-  - value: "20+ sources"
+  - value: "9 sources"
     label: "Practitioner-grounded"
 ---
 ```
