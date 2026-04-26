@@ -70,55 +70,54 @@ Every first encounter logs to the Prospect File within 24 hours. Conversational 
 
 ## The Prospect File Architecture
 
-The Prospect File is a three-layer structured memory: *Profile*, *Decision Log*, *Relational Graph*. Each prospect has one file; the file persists across relationship stages; the collection of files forms the pipeline. The architecture is the same at the qualification stage as it is five meetings later; what changes is how densely each layer is populated.
+The Prospect File is a three-layer structured memory: *Profile*, *Decision Log*, *Relational Graph*. One file per prospect, persisting across stages; the collection of files forms the pipeline.
 
 ### Layer 1 — Profile
 
-What the prospect is. Fourteen categories, approximately 150 fields. Categories span core identity and residences; family and multi-generational structure; education across generations; wealth story; professional history and boards; cultural origin and orientation; food, beverage, dietary; sports, fitness, hobbies, travel; personality and communication; philanthropy; network, memberships, and centers of influence; conversational signals and behavioral notes; sensitive information volunteered only; trigger events and timing markers.
+Fourteen categories, approximately 150 fields:
 
-Each field carries one of two tags. *Decision-driving* [DD] fields have explicit if/then logic: this field's value drives this specific outreach move. *Reference* [REF] fields support decision-driving fields without independent decision logic. The schema's design rule: if a field cannot drive an outreach decision, it does not belong.
+1. Core identity and residences
+2. Family, multi-generational
+3. Education, across generations
+4. Wealth story
+5. Professional history and boards
+6. Cultural origin and orientation
+7. Food, beverage, dietary
+8. Sports, fitness, hobbies, travel
+9. Personality and communication
+10. Philanthropy
+11. Network, memberships, and centers of influence
+12. Conversational signals and behavioral notes
+13. Sensitive information (volunteered only)
+14. Trigger events and timing markers
 
-Representative decision-driving fields and their if/then logic:
-
-- **Liquidity event history** (Cat 4). *If 6 to 18 months pre-event, lead with pre-liquidity planning (10b5-1 sequencing, QSBS stacking, exchange funds); if past 18 months post-event, that framing is late.*
-- **Spouse financial agency** (Cat 2). *If spouse is the primary decision-maker, prospect-only first meeting is a wasted meeting; pivot to couple-format venue.*
-- **Family decision-making cultural mode** (Cat 6). *If Collective Harmony, no commitment possible until the group aligns; if Honor, route early outreach through the patriarch even if the prospect is the operator generation; if Individualist, the prospect is authorized to decide.*
-- **First-vs-third-person wealth language** (Cat 12). *If the prospect consistently speaks of inherited wealth in the third person ("the money," "the trust"), product pitch is premature; first mandate is psychological.*
-- **Known forward triggers** (Cat 14). *If a planned IPO, M&A close, or foundation launch is approaching, time the outreach to the trigger. A trust conversation 60 days before a planned IPO is timely; six months after is late.*
+Each field carries one of two tags. *Decision-driving* [DD] fields have explicit if/then logic that drives a specific outreach move — for example, a prospect 6 to 18 months pre-liquidity gets pre-event tax-alpha planning; a prospect with primary spousal financial agency gets a couple-format meeting. *Reference* [REF] fields support DD fields without independent decision logic. The schema's design rule: if a field cannot drive an outreach decision, it does not belong.
 
 ### Layer 2 — Decision Log
 
-Per prospect, dated chronological journal of what the banker has thought and done. Six entry types: *Inference drawn* (what an observed signal implies about the prospect); *Move considered* (menu of outreach options evaluated, including options rejected, logged with rationale); *Move taken* (what was executed); *Outcome* (signal the move produced); *Question to surface* (open questions not yet answered); *Pattern match flag* (recognition that this prospect's signal set resembles an Existing Client). Each entry dates, names trigger, cross-references Layer 1 fields updated and Layer 3 elements involved.
+Per prospect, dated journal of what the banker has thought and done. Six entry types: *inferences drawn* from observed signals; *moves considered* (including options rejected, with rationale); *moves taken*; *outcomes*; *questions to surface* in the next meeting; *pattern match flags* against Existing Clients.
 
 ### Layer 3 — Relational Graph
 
-The connective tissue. Two sub-tables. The *COI Ledger* holds one record per Center of Influence the banker directly knows (outside counsel, estate counsel, school development officer, fellow board director, trusted mutual contact). Each record captures identity, relationship origin, temperature, last touch and next scheduled touch, cadence, past introductions made and their outcomes, what the COI needs from the banker in return, a reciprocity ledger, and style notes. COIs cross multiple prospects and multiple relationship stages within the banker's own book; a single COI record supports many files.
+Two sub-tables. The *COI Ledger* holds one record per Center of Influence the banker directly knows — origin, temperature, cadence, past introductions and their outcomes, reciprocity ledger, and what the COI needs in return. COIs cross multiple prospects within the banker's own book.
 
-The *Pattern Map*, per prospect, flags one to three Existing Clients whose signal set this prospect resembles, plus an anti-pattern Existing Client whose situation looked similar but played out differently. Pattern matches are drawn only from the banker's own directly-served clients; client information protected by firm confidentiality policy and regulatory privacy frameworks stays within the trust boundary that earned it. The Pattern Map reflects the banker's own book, not a firm-wide client database. Each pattern match captures what worked there, what failed, what to carry forward, and what to avoid. Pattern-matching is the first move of any new outreach decision, not the last.
+The *Pattern Map*, per prospect, flags one to three Existing Clients whose signal set this prospect resembles, plus an anti-pattern Existing Client whose situation looked similar but played out differently. Pattern matches are drawn only from the banker's own directly-served clients; client information protected by firm confidentiality and regulatory privacy frameworks stays within the trust boundary that earned it. The Pattern Map reflects the banker's own book, not a firm-wide database.
 
 ### The Inference Layer
 
-The mental model that turns Layer 1, Layer 2, and Layer 3 data into a specific outreach move. Without it, the Prospect File is a data dictionary; with it, the Prospect File is a decision engine.
+The mental model that turns Layer 1, Layer 2, and Layer 3 data into a specific outreach move. Five rules:
 
-Five rules for reading the file:
+1. **Weight is uneven.** One or two signals carry disproportionate weight; the rest is context.
+2. **Absence is signal.** Avoidance, silence, omission are data.
+3. **Contradictions are diagnostic.** When fields contradict, the contradiction is the planning conversation.
+4. **The strongest opener routes through the heaviest signal.** Outreach built around the second-heaviest signal is competent but generic.
+5. **Pattern-match before drafting.** Every first-touch draft starts from Layer 3.
 
-1. **Weight is uneven.** One or two signals carry disproportionate weight; the rest is context. The banker's first job is to identify the load-bearing signal, not to triangulate equally across 150 fields.
-2. **Absence is signal.** Avoidance, silence, omission are data. The prospect who never mentions a former co-founder is communicating something about that relationship.
-3. **Contradictions are diagnostic.** When Layer 1 fields contradict, the contradiction is the planning conversation.
-4. **The strongest opener routes through the heaviest signal.** Outreach built around the second-heaviest signal is competent but generic. The template's failure mode.
-5. **Pattern-match before drafting.** Every first-touch draft starts from Layer 3, not from a blank page. If no pattern match exists, this file is a new archetype; flag it and draft from first principles.
-
-Three discovery answers are the highest-yield early-meeting questions:
-
-- "What is most important about this wealth to you?" (values-first opener)
-- "If we were meeting three years from now, what would have to happen for this to feel successful?" (the three-year question)
-- "What has been your experience with prior advisors? How did you choose them? What did you learn?" (selection diagnostic)
-
-Once all three answers are captured in Layer 1 Cat 12, the outreach thesis is close to determined. Until all three are captured, outreach is tentative; once captured, outreach is decisive.
+Three discovery answers are the highest-yield early-meeting questions: "What is most important about this wealth to you?", "If we were meeting three years from now, what would have to happen for this to feel successful?", and "What has been your experience with prior advisors? How did you choose them? What did you learn?" Once captured in Layer 1 Cat 12, the outreach thesis is close to determined.
 
 ### Provenance discipline
 
-Every datum in the Prospect File carries a source. Two top-level buckets: *Public* information (online records, published content, pre-meeting referral context from a COI) and *Direct* interaction (seated conversation, phone call, dinner, organized per touchpoint). The Prospect File holds nothing that was not either volunteered by the prospect or drawn from the public record. Sensitive information (Cat 13) stays empty by default and is entered only when the prospect themselves volunteers. The discipline is the defense: when AI synthesis of structured public records gets cheaper, the source-of-each-datum check is what holds the line between signal gathering and intrusion.
+Every datum in the Prospect File carries a source. *Public* information includes online records, published content, and pre-meeting referral context from a COI. *Direct* interaction includes any seated conversation, phone call, or dinner. Sensitive information (Cat 13) stays empty by default and is entered only when the prospect themselves volunteers. The discipline is the defense: when AI synthesis of structured public records gets cheaper, the source-of-each-datum check is what holds the line between signal gathering and intrusion.
 
 ## Four Prospect Files
 
